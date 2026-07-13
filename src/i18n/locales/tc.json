@@ -1,1 +1,31 @@
-{}
+{
+  "notfound": {
+    "title": "頁面沒找到...",
+    "content": "可能原因：未公開此頁面、錯誤的訪問路徑等",
+    "back_to_home": "點擊卡片返回首頁"
+  },
+  "home": {
+    "title": "首頁",
+    "content": "提供一些網站資訊和瀏覽建議",
+    "members": "貢獻成員"
+  },
+  "map": {
+    "title": "地圖",
+    "content": "提供地圖功能"
+  },
+  "filter": {
+    "title": "篩選",
+    "all": "全部",
+    "quicktravel": "快速旅行",
+    "landmarkname": "地標",
+    "superite": "超級水晶",
+    "oldmei": "老梅"
+  },
+  "close": "關閉",
+  "footer": {
+    "content": "Super Animal Royale 的名稱以及任何相關名稱、標誌、和圖像均為其各自所有者的註冊商標。",
+    "content1": "©",
+    "content3": "SAWTool",
+    "content4": "本站點為開源專案，如需貢獻內容請前往"
+  }
+}

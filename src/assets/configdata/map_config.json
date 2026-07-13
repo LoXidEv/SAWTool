@@ -1,0 +1,8 @@
+{
+  "mapName": "SAW",
+  "rows": 8,
+  "cols": 8,
+  "tileSize": 256,
+  "imagePathPrefix": "/image/map/SAW_",
+  "imageExtension": ".webp"
+}

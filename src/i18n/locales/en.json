@@ -1,1 +1,31 @@
-{}
+{
+  "notfound": {
+    "title": "Page not found...",
+    "content": "Possible reasons: page not public, wrong access path, etc.",
+    "back_to_home": "Click the card to go back home"
+  },
+  "home": {
+    "title": "Home",
+    "content": "Provides website information and navigation suggestions",
+    "members": "Contributors"
+  },
+  "map": {
+    "title": "Map",
+    "content": "Provides map functionality"
+  },
+  "filter": {
+    "title": "Filter",
+    "all": "All",
+    "quicktravel": "Quick Travel",
+    "landmarkname": "Landmarks",
+    "superite": "Superite",
+    "oldmei": "Old Mei"
+  },
+  "close": "Close",
+  "footer": {
+    "content": "The name Super Animal Royale and any related names, logos, and images are registered trademarks of their respective owners.",
+    "content1": "©",
+    "content3": "SAWTool",
+    "content4": "This site is an open source project, if you would like to contribute please visit"
+  }
+}

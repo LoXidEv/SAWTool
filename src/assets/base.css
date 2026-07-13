@@ -47,7 +47,8 @@ html,
 body {
   &.mdui-theme-light {}
 
-  &.mdui-theme-dark {}
+  &.mdui-theme-dark {
+  }
 
   min-width: 320px;
   padding: 0;

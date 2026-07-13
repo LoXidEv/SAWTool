@@ -31,3 +31,14 @@
   }
 }
 
+.link {
+  color: var(--theme-color-2);
+  text-decoration: none;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: var(--theme-color-2-oc-up);
+    padding: 2px 5px;
+    font-size: 14px;
+  }
+}

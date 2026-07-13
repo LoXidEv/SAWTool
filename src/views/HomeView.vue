@@ -3,8 +3,8 @@ export default {
   data() {
     return {
       members: [
-        { name: '天冬氨酸', role: '网站制作/数据处理', avatar: 'https://avatars.githubusercontent.com/u/110319858?v=4' },
-        { name: '', role: '', avatar: '' },
+        { name: '天冬氨酸', role: 'Website Dev', avatar: 'https://avatars.githubusercontent.com/u/110319858?v=4' },
+        // { name: 'FallingStar', role: '', avatar: '' },
         // { name: '', role: '', avatar: '' },
         // { name: '', role: '', avatar: '' },
       ]
@@ -47,7 +47,7 @@ export default {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 12px;
+  padding: 6px;
   background: var(--text-color-oc-up);
   border-radius: var(--card-border-radius);
 }

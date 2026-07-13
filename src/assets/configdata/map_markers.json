@@ -1,0 +1,1356 @@
+{
+  "baseInfo": {
+    "filter": [
+      {
+        "name": "filter.quicktravel",
+        "type": "quicktravel"
+      },
+      {
+        "name": "filter.landmarkname",
+        "type": "landmarkname"
+      },
+      {
+        "name": "filter.superite",
+        "type": "superite"
+      },
+            {
+        "name": "filter.oldmei",
+        "type": "oldmei"
+      }
+    ]
+  },
+  "markers": [
+    {
+      "id": "route_npc_oldmei",
+      "type": "oldmei",
+      "baseInfo": {
+        "name": "markers.route_npc_oldmei.name",
+        "icon": "null",
+        "originalX": null,
+        "originalY": null,
+        "desc": "markers.route_npc_oldmei.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "land_mark_1",
+      "type": "landmarkname",
+      "baseInfo": {
+        "name": "markers.land_mark_1.name",
+        "icon": "null",
+        "originalX": 305,
+        "originalY": 1634,
+        "desc": "markers.land_mark_1.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "land_mark_2",
+      "type": "landmarkname",
+      "baseInfo": {
+        "name": "markers.land_mark_2.name",
+        "icon": "null",
+        "originalX": 448,
+        "originalY": 1780,
+        "desc": "markers.land_mark_2.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "land_mark_3",
+      "type": "landmarkname",
+      "baseInfo": {
+        "name": "markers.land_mark_3.name",
+        "icon": "null",
+        "originalX": 710,
+        "originalY": 1857,
+        "desc": "markers.land_mark_3.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "land_mark_4",
+      "type": "landmarkname",
+      "baseInfo": {
+        "name": "markers.land_mark_4.name",
+        "icon": "null",
+        "originalX": 1093,
+        "originalY": 1922,
+        "desc": "markers.land_mark_4.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "land_mark_5",
+      "type": "landmarkname",
+      "baseInfo": {
+        "name": "markers.land_mark_5.name",
+        "icon": "null",
+        "originalX": 773,
+        "originalY": 1628,
+        "desc": "markers.land_mark_5.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "land_mark_6",
+      "type": "landmarkname",
+      "baseInfo": {
+        "name": "markers.land_mark_6.name",
+        "icon": "null",
+        "originalX": 957,
+        "originalY": 1582,
+        "desc": "markers.land_mark_6.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "land_mark_7",
+      "type": "landmarkname",
+      "baseInfo": {
+        "name": "markers.land_mark_7.name",
+        "icon": "null",
+        "originalX": 1727,
+        "originalY": 1811,
+        "desc": "markers.land_mark_7.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "land_mark_8",
+      "type": "landmarkname",
+      "baseInfo": {
+        "name": "markers.land_mark_8.name",
+        "icon": "null",
+        "originalX": 1539,
+        "originalY": 1567,
+        "desc": "markers.land_mark_8.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "land_mark_9",
+      "type": "landmarkname",
+      "baseInfo": {
+        "name": "markers.land_mark_9.name",
+        "icon": "null",
+        "originalX": 573,
+        "originalY": 1466,
+        "desc": "markers.land_mark_9.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "land_mark_10",
+      "type": "landmarkname",
+      "baseInfo": {
+        "name": "markers.land_mark_10.name",
+        "icon": "null",
+        "originalX": 355,
+        "originalY": 1376,
+        "desc": "markers.land_mark_10.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "land_mark_11",
+      "type": "landmarkname",
+      "baseInfo": {
+        "name": "markers.land_mark_11.name",
+        "icon": "null",
+        "originalX": 779,
+        "originalY": 1295,
+        "desc": "markers.land_mark_11.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "land_mark_12",
+      "type": "landmarkname",
+      "baseInfo": {
+        "name": "markers.land_mark_12.name",
+        "icon": "null",
+        "originalX": 1206,
+        "originalY": 1415,
+        "desc": "markers.land_mark_12.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "land_mark_13",
+      "type": "landmarkname",
+      "baseInfo": {
+        "name": "markers.land_mark_13.name",
+        "icon": "null",
+        "originalX": 1426,
+        "originalY": 1392,
+        "desc": "markers.land_mark_13.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "land_mark_14",
+      "type": "landmarkname",
+      "baseInfo": {
+        "name": "markers.land_mark_14.name",
+        "icon": "null",
+        "originalX": 649,
+        "originalY": 1179,
+        "desc": "markers.land_mark_14.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "land_mark_15",
+      "type": "landmarkname",
+      "baseInfo": {
+        "name": "markers.land_mark_15.name",
+        "icon": "null",
+        "originalX": 1145,
+        "originalY": 1082,
+        "desc": "markers.land_mark_15.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "land_mark_16",
+      "type": "landmarkname",
+      "baseInfo": {
+        "name": "markers.land_mark_16.name",
+        "icon": "null",
+        "originalX": 1530,
+        "originalY": 1218,
+        "desc": "markers.land_mark_16.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "land_mark_17",
+      "type": "landmarkname",
+      "baseInfo": {
+        "name": "markers.land_mark_17.name",
+        "icon": "null",
+        "originalX": 1825,
+        "originalY": 1092,
+        "desc": "markers.land_mark_17.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "land_mark_18",
+      "type": "landmarkname",
+      "baseInfo": {
+        "name": "markers.land_mark_18.name",
+        "icon": "null",
+        "originalX": 316,
+        "originalY": 1127,
+        "desc": "markers.land_mark_18.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "land_mark_19",
+      "type": "landmarkname",
+      "baseInfo": {
+        "name": "markers.land_mark_19.name",
+        "icon": "null",
+        "originalX": 845,
+        "originalY": 902,
+        "desc": "markers.land_mark_19.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "land_mark_20",
+      "type": "landmarkname",
+      "baseInfo": {
+        "name": "markers.land_mark_20.name",
+        "icon": "null",
+        "originalX": 1509,
+        "originalY": 826,
+        "desc": "markers.land_mark_20.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "land_mark_21",
+      "type": "landmarkname",
+      "baseInfo": {
+        "name": "markers.land_mark_21.name",
+        "icon": "null",
+        "originalX": 555,
+        "originalY": 855,
+        "desc": "markers.land_mark_21.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "land_mark_22",
+      "type": "landmarkname",
+      "baseInfo": {
+        "name": "markers.land_mark_22.name",
+        "icon": "null",
+        "originalX": 627,
+        "originalY": 796,
+        "desc": "markers.land_mark_22.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "land_mark_23",
+      "type": "landmarkname",
+      "baseInfo": {
+        "name": "markers.land_mark_23.name",
+        "icon": "null",
+        "originalX": 1221,
+        "originalY": 679,
+        "desc": "markers.land_mark_23.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "land_mark_24",
+      "type": "landmarkname",
+      "baseInfo": {
+        "name": "markers.land_mark_24.name",
+        "icon": "null",
+        "originalX": 581,
+        "originalY": 578,
+        "desc": "markers.land_mark_24.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "land_mark_25",
+      "type": "landmarkname",
+      "baseInfo": {
+        "name": "markers.land_mark_25.name",
+        "icon": "null",
+        "originalX": 695,
+        "originalY": 340,
+        "desc": "markers.land_mark_25.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "land_mark_26",
+      "type": "landmarkname",
+      "baseInfo": {
+        "name": "markers.land_mark_26.name",
+        "icon": "null",
+        "originalX": 964,
+        "originalY": 385,
+        "desc": "markers.land_mark_26.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "land_mark_27",
+      "type": "landmarkname",
+      "baseInfo": {
+        "name": "markers.land_mark_27.name",
+        "icon": "null",
+        "originalX": 1062,
+        "originalY": 293,
+        "desc": "markers.land_mark_27.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "land_mark_28",
+      "type": "landmarkname",
+      "baseInfo": {
+        "name": "markers.land_mark_28.name",
+        "icon": "null",
+        "originalX": 1431,
+        "originalY": 377,
+        "desc": "markers.land_mark_28.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "mtn_station_1",
+      "type": "quicktravel",
+      "baseInfo": {
+        "name": "markers.mtn_station_1.name",
+        "icon": "NPC_mole.png",
+        "originalX": 254,
+        "originalY": 1657,
+        "desc": "markers.mtn_station_1.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "mtn_station_2",
+      "type": "quicktravel",
+      "baseInfo": {
+        "name": "markers.mtn_station_2.name",
+        "icon": "NPC_mole.png",
+        "originalX": 268,
+        "originalY": 1068,
+        "desc": "markers.mtn_station_2.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "mtn_station_3",
+      "type": "quicktravel",
+      "baseInfo": {
+        "name": "markers.mtn_station_3.name",
+        "icon": "NPC_mole.png",
+        "originalX": 1403,
+        "originalY": 1377,
+        "desc": "markers.mtn_station_3.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "mtn_station_4",
+      "type": "quicktravel",
+      "baseInfo": {
+        "name": "markers.mtn_station_4.name",
+        "icon": "NPC_mole.png",
+        "originalX": 800,
+        "originalY": 894,
+        "desc": "markers.mtn_station_4.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "mtn_station_5",
+      "type": "quicktravel",
+      "baseInfo": {
+        "name": "markers.mtn_station_5.name",
+        "icon": "NPC_mole.png",
+        "originalX": 1879,
+        "originalY": 266,
+        "desc": "markers.mtn_station_5.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "mtn_station_6",
+      "type": "quicktravel",
+      "baseInfo": {
+        "name": "markers.mtn_station_6.name",
+        "icon": "NPC_mole.png",
+        "originalX": 1069,
+        "originalY": 1961,
+        "desc": "markers.mtn_station_6.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "mtn_station_7",
+      "type": "quicktravel",
+      "baseInfo": {
+        "name": "markers.mtn_station_7.name",
+        "icon": "NPC_mole.png",
+        "originalX": 968,
+        "originalY": 329,
+        "desc": "markers.mtn_station_7.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "mtn_station_8",
+      "type": "quicktravel",
+      "baseInfo": {
+        "name": "markers.mtn_station_8.name",
+        "icon": "NPC_mole.png",
+        "originalX": 453,
+        "originalY": 552,
+        "desc": "markers.mtn_station_8.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "mtn_station_9",
+      "type": "quicktravel",
+      "baseInfo": {
+        "name": "markers.mtn_station_9.name",
+        "icon": "NPC_mole.png",
+        "originalX": 1825,
+        "originalY": 1231,
+        "desc": "markers.mtn_station_9.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "mtn_station_10",
+      "type": "quicktravel",
+      "baseInfo": {
+        "name": "markers.mtn_station_10.name",
+        "icon": "NPC_mole.png",
+        "originalX": 1175,
+        "originalY": 1193,
+        "desc": "markers.mtn_station_10.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "mtn_station_11",
+      "type": "quicktravel",
+      "baseInfo": {
+        "name": "markers.mtn_station_11.name",
+        "icon": "NPC_mole.png",
+        "originalX": 1876,
+        "originalY": 1911,
+        "desc": "markers.mtn_station_11.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "mtn_station_12",
+      "type": "quicktravel",
+      "baseInfo": {
+        "name": "markers.mtn_station_12.name",
+        "icon": "NPC_mole.png",
+        "originalX": 1158,
+        "originalY": 611,
+        "desc": "markers.mtn_station_12.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_1",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_1.name",
+        "icon": "ShardIcon.png",
+        "originalX": 334,
+        "originalY": 1929,
+        "desc": "markers.superite_1.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_2",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_2.name",
+        "icon": "ShardIcon.png",
+        "originalX": 197,
+        "originalY": 1769,
+        "desc": "markers.superite_2.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_3",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_3.name",
+        "icon": "ShardIcon.png",
+        "originalX": 161,
+        "originalY": 1791,
+        "desc": "markers.superite_3.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_4",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_4.name",
+        "icon": "ShardIcon.png",
+        "originalX": 162,
+        "originalY": 1642,
+        "desc": "markers.superite_4.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_5",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_5.name",
+        "icon": "ShardIcon.png",
+        "originalX": 378,
+        "originalY": 1639,
+        "desc": "markers.superite_5.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_6",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_6.name",
+        "icon": "ShardIcon.png",
+        "originalX": 457,
+        "originalY": 1566,
+        "desc": "markers.superite_6.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_7",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_7.name",
+        "icon": "ShardIcon.png",
+        "originalX": 268,
+        "originalY": 1587,
+        "desc": "markers.superite_7.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_8",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_8.name",
+        "icon": "ShardIcon.png",
+        "originalX": 96,
+        "originalY": 1304,
+        "desc": "markers.superite_8.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_9",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_9.name",
+        "icon": "ShardIcon.png",
+        "originalX": 320,
+        "originalY": 1304,
+        "desc": "markers.superite_9.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_10",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_10.name",
+        "icon": "ShardIcon.png",
+        "originalX": 407,
+        "originalY": 1184,
+        "desc": "markers.superite_10.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_11",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_11.name",
+        "icon": "ShardIcon.png",
+        "originalX": 159,
+        "originalY": 1033,
+        "desc": "markers.superite_11.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_12",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_12.name",
+        "icon": "ShardIcon.png",
+        "originalX": 511,
+        "originalY": 1072,
+        "desc": "markers.superite_12.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_13",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_13.name",
+        "icon": "ShardIcon.png",
+        "originalX": 655,
+        "originalY": 1119,
+        "desc": "markers.superite_13.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_14",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_14.name",
+        "icon": "ShardIcon.png",
+        "originalX": 658,
+        "originalY": 1213,
+        "desc": "markers.superite_14.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_15",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_15.name",
+        "icon": "ShardIcon.png",
+        "originalX": 905,
+        "originalY": 1091,
+        "desc": "markers.superite_15.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_16",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_16.name",
+        "icon": "ShardIcon.png",
+        "originalX": 855,
+        "originalY": 1374,
+        "desc": "markers.superite_16.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_17",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_17.name",
+        "icon": "ShardIcon.png",
+        "originalX": 662,
+        "originalY": 1446,
+        "desc": "markers.superite_17.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_18",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_18.name",
+        "icon": "ShardIcon.png",
+        "originalX": 846,
+        "originalY": 1581,
+        "desc": "markers.superite_18.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_19",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_19.name",
+        "icon": "ShardIcon.png",
+        "originalX": 902,
+        "originalY": 1718,
+        "desc": "markers.superite_19.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_20",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_20.name",
+        "icon": "ShardIcon.png",
+        "originalX": 775,
+        "originalY": 1795,
+        "desc": "markers.superite_20.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_21",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_21.name",
+        "icon": "ShardIcon.png",
+        "originalX": 738,
+        "originalY": 1997,
+        "desc": "markers.superite_21.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_22",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_22.name",
+        "icon": "ShardIcon.png",
+        "originalX": 1124,
+        "originalY": 1958,
+        "desc": "markers.superite_22.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_23",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_23.name",
+        "icon": "ShardIcon.png",
+        "originalX": 1209,
+        "originalY": 2034,
+        "desc": "markers.superite_23.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_24",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_24.name",
+        "icon": "ShardIcon.png",
+        "originalX": 1326,
+        "originalY": 1801,
+        "desc": "markers.superite_24.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_25",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_25.name",
+        "icon": "ShardIcon.png",
+        "originalX": 1574,
+        "originalY": 1964,
+        "desc": "markers.superite_25.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_26",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_26.name",
+        "icon": "ShardIcon.png",
+        "originalX": 1943,
+        "originalY": 1926,
+        "desc": "markers.superite_26.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_27",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_27.name",
+        "icon": "ShardIcon.png",
+        "originalX": 1891,
+        "originalY": 1680,
+        "desc": "markers.superite_27.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_28",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_28.name",
+        "icon": "ShardIcon.png",
+        "originalX": 1934,
+        "originalY": 1445,
+        "desc": "markers.superite_28.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_29",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_29.name",
+        "icon": "ShardIcon.png",
+        "originalX": 1629,
+        "originalY": 1636,
+        "desc": "markers.superite_29.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_30",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_30.name",
+        "icon": "ShardIcon.png",
+        "originalX": 1408,
+        "originalY": 1582,
+        "desc": "markers.superite_30.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_31",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_31.name",
+        "icon": "ShardIcon.png",
+        "originalX": 1326,
+        "originalY": 1490,
+        "desc": "markers.superite_31.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_32",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_32.name",
+        "icon": "ShardIcon.png",
+        "originalX": 1235,
+        "originalY": 1382,
+        "desc": "markers.superite_32.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_33",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_33.name",
+        "icon": "ShardIcon.png",
+        "originalX": 1153,
+        "originalY": 1430,
+        "desc": "markers.superite_33.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_34",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_34.name",
+        "icon": "ShardIcon.png",
+        "originalX": 1024,
+        "originalY": 1189,
+        "desc": "markers.superite_34.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_35",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_35.name",
+        "icon": "ShardIcon.png",
+        "originalX": 1224,
+        "originalY": 1214,
+        "desc": "markers.superite_35.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_36",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_36.name",
+        "icon": "ShardIcon.png",
+        "originalX": 1119,
+        "originalY": 978,
+        "desc": "markers.superite_36.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_37",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_37.name",
+        "icon": "ShardIcon.png",
+        "originalX": 1598,
+        "originalY": 1239,
+        "desc": "markers.superite_37.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_38",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_38.name",
+        "icon": "ShardIcon.png",
+        "originalX": 1624,
+        "originalY": 1146,
+        "desc": "markers.superite_38.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_39",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_39.name",
+        "icon": "ShardIcon.png",
+        "originalX": 1889,
+        "originalY": 1096,
+        "desc": "markers.superite_39.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_40",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_40.name",
+        "icon": "ShardIcon.png",
+        "originalX": 1768,
+        "originalY": 1028,
+        "desc": "markers.superite_40.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_41",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_41.name",
+        "icon": "ShardIcon.png",
+        "originalX": 1405,
+        "originalY": 905,
+        "desc": "markers.superite_41.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_42",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_42.name",
+        "icon": "ShardIcon.png",
+        "originalX": 1483,
+        "originalY": 823,
+        "desc": "markers.superite_42.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_43",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_43.name",
+        "icon": "ShardIcon.png",
+        "originalX": 1739,
+        "originalY": 800,
+        "desc": "markers.superite_43.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_44",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_44.name",
+        "icon": "ShardIcon.png",
+        "originalX": 1615,
+        "originalY": 560,
+        "desc": "markers.superite_44.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_45",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_45.name",
+        "icon": "ShardIcon.png",
+        "originalX": 1717,
+        "originalY": 481,
+        "desc": "markers.superite_45.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_46",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_46.name",
+        "icon": "ShardIcon.png",
+        "originalX": 1905,
+        "originalY": 388,
+        "desc": "markers.superite_46.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_47",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_47.name",
+        "icon": "ShardIcon.png",
+        "originalX": 1412,
+        "originalY": 530,
+        "desc": "markers.superite_47.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_48",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_48.name",
+        "icon": "ShardIcon.png",
+        "originalX": 1373,
+        "originalY": 621,
+        "desc": "markers.superite_48.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_49",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_49.name",
+        "icon": "ShardIcon.png",
+        "originalX": 1267,
+        "originalY": 704,
+        "desc": "markers.superite_49.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_50",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_50.name",
+        "icon": "ShardIcon.png",
+        "originalX": 1109,
+        "originalY": 713,
+        "desc": "markers.superite_50.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_51",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_51.name",
+        "icon": "ShardIcon.png",
+        "originalX": 963,
+        "originalY": 573,
+        "desc": "markers.superite_51.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_52",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_52.name",
+        "icon": "ShardIcon.png",
+        "originalX": 842,
+        "originalY": 937,
+        "desc": "markers.superite_52.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_53",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_53.name",
+        "icon": "ShardIcon.png",
+        "originalX": 597,
+        "originalY": 785,
+        "desc": "markers.superite_53.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_54",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_54.name",
+        "icon": "ShardIcon.png",
+        "originalX": 609,
+        "originalY": 649,
+        "desc": "markers.superite_54.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_55",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_55.name",
+        "icon": "ShardIcon.png",
+        "originalX": 663,
+        "originalY": 517,
+        "desc": "markers.superite_55.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_56",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_56.name",
+        "icon": "ShardIcon.png",
+        "originalX": 528,
+        "originalY": 509,
+        "desc": "markers.superite_56.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_57",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_57.name",
+        "icon": "ShardIcon.png",
+        "originalX": 430,
+        "originalY": 637,
+        "desc": "markers.superite_57.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_58",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_58.name",
+        "icon": "ShardIcon.png",
+        "originalX": 317,
+        "originalY": 845,
+        "desc": "markers.superite_58.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_59",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_59.name",
+        "icon": "ShardIcon.png",
+        "originalX": 229,
+        "originalY": 550,
+        "desc": "markers.superite_59.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_60",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_60.name",
+        "icon": "ShardIcon.png",
+        "originalX": 389,
+        "originalY": 366,
+        "desc": "markers.superite_60.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_61",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_61.name",
+        "icon": "ShardIcon.png",
+        "originalX": 229,
+        "originalY": 235,
+        "desc": "markers.superite_61.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_62",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_62.name",
+        "icon": "ShardIcon.png",
+        "originalX": 432,
+        "originalY": 83,
+        "desc": "markers.superite_62.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_63",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_63.name",
+        "icon": "ShardIcon.png",
+        "originalX": 529,
+        "originalY": 184,
+        "desc": "markers.superite_63.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_64",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_64.name",
+        "icon": "ShardIcon.png",
+        "originalX": 616,
+        "originalY": 384,
+        "desc": "markers.superite_64.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_65",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_65.name",
+        "icon": "ShardIcon.png",
+        "originalX": 812,
+        "originalY": 181,
+        "desc": "markers.superite_65.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_66",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_66.name",
+        "icon": "ShardIcon.png",
+        "originalX": 901,
+        "originalY": 319,
+        "desc": "markers.superite_66.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_67",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_67.name",
+        "icon": "ShardIcon.png",
+        "originalX": 1111,
+        "originalY": 190,
+        "desc": "markers.superite_67.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_68",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_68.name",
+        "icon": "ShardIcon.png",
+        "originalX": 1284,
+        "originalY": 139,
+        "desc": "markers.superite_68.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_69",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_69.name",
+        "icon": "ShardIcon.png",
+        "originalX": 1401,
+        "originalY": 372,
+        "desc": "markers.superite_69.desc"
+      },
+      "extendInfo": {}
+    },
+    {
+      "id": "superite_70",
+      "type": "superite",
+      "baseInfo": {
+        "name": "markers.superite_70.name",
+        "icon": "ShardIcon.png",
+        "originalX": 1737,
+        "originalY": 165,
+        "desc": "markers.superite_70.desc"
+      },
+      "extendInfo": {}
+    }
+  ]
+}

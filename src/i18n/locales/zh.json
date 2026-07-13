@@ -13,6 +13,457 @@
     "title": "地图",
     "content": "提供地图功能"
   },
+  "markers": {
+    "mtn_station_1": {
+      "name": "迎宾站",
+      "desc": "暂无文本"
+    },
+    "mtn_station_2": {
+      "name": "Murre 站",
+      "desc": "暂无文本"
+    },
+    "mtn_station_3": {
+      "name": "迷你站",
+      "desc": "暂无文本"
+    },
+    "mtn_station_4": {
+      "name": "鸸鹋站",
+      "desc": "暂无文本"
+    },
+    "mtn_station_5": {
+      "name": "世末之站",
+      "desc": "暂无文本"
+    },
+    "mtn_station_6": {
+      "name": "胜利站",
+      "desc": "暂无文本"
+    },
+    "mtn_station_7": {
+      "name": "企鹅站",
+      "desc": "暂无文本"
+    },
+    "mtn_station_8": {
+      "name": "紫晶站",
+      "desc": "暂无文本"
+    },
+    "mtn_station_9": {
+      "name": "Pixile 港站",
+      "desc": "暂无文本"
+    },
+    "mtn_station_10": {
+      "name": "竹子站",
+      "desc": "暂无文本"
+    },
+    "mtn_station_11": {
+      "name": "海洋乐园站",
+      "desc": "暂无文本"
+    },
+    "mtn_station_12": {
+      "name": "拉布拉多实验室站",
+      "desc": "暂无文本"
+    },
+    "land_mark_1": {
+      "name": "S.A.W. 迎宾中心",
+      "desc": "暂无文本"
+    },
+    "land_mark_2": {
+      "name": "SMOMA",
+      "desc": "暂无文本"
+    },
+    "land_mark_3": {
+      "name": "仓鼠球体育场",
+      "desc": "暂无文本"
+    },
+    "land_mark_4": {
+      "name": "胜利岛",
+      "desc": "暂无文本"
+    },
+    "land_mark_5": {
+      "name": "鳄鱼俱乐部",
+      "desc": "暂无文本"
+    },
+    "land_mark_6": {
+      "name": "PETE 的沼泽",
+      "desc": "暂无文本"
+    },
+    "land_mark_7": {
+      "name": "超级海洋公园",
+      "desc": "暂无文本"
+    },
+    "land_mark_8": {
+      "name": "金木森林",
+      "desc": "暂无文本"
+    },
+    "land_mark_9": {
+      "name": "鹰临",
+      "desc": "暂无文本"
+    },
+    "land_mark_10": {
+      "name": "超级动物剧院",
+      "desc": "暂无文本"
+    },
+    "land_mark_11": {
+      "name": "S.A.W. 山庄",
+      "desc": "暂无文本"
+    },
+    "land_mark_12": {
+      "name": "超级动物农场",
+      "desc": "暂无文本"
+    },
+    "land_mark_13": {
+      "name": "迷你牧场",
+      "desc": "暂无文本"
+    },
+    "land_mark_14": {
+      "name": "河狸建设总部",
+      "desc": "暂无文本"
+    },
+    "land_mark_15": {
+      "name": "S.A.W. 翠竹山庄",
+      "desc": "暂无文本"
+    },
+    "land_mark_16": {
+      "name": "S.A.W. 安保部",
+      "desc": "暂无文本"
+    },
+    "land_mark_17": {
+      "name": "PIXILE 港",
+      "desc": "暂无文本"
+    },
+    "land_mark_18": {
+      "name": "MURRE 之森",
+      "desc": "暂无文本"
+    },
+    "land_mark_19": {
+      "name": "巨型鸸鹋牧场",
+      "desc": "暂无文本"
+    },
+    "land_mark_20": {
+      "name": "生命果汁工厂",
+      "desc": "暂无文本"
+    },
+    "land_mark_21": {
+      "name": "超级撒哈拉沙漠",
+      "desc": "暂无文本"
+    },
+    "land_mark_22": {
+      "name": "超级金字塔",
+      "desc": "暂无文本"
+    },
+    "land_mark_23": {
+      "name": "S.A.W. 实验室",
+      "desc": "暂无文本"
+    },
+    "land_mark_24": {
+      "name": "超级紫晶山",
+      "desc": "暂无文本"
+    },
+    "land_mark_25": {
+      "name": "滑溜溜湖",
+      "desc": "暂无文本"
+    },
+    "land_mark_26": {
+      "name": "超级企鹅宫殿",
+      "desc": "暂无文本"
+    },
+    "land_mark_27": {
+      "name": "THOMAS 的苔原",
+      "desc": "暂无文本"
+    },
+    "land_mark_28": {
+      "name": "THOMAS 的工坊",
+      "desc": "暂无文本"
+    },
+    "superite_1": {
+      "name": "迎宾中心船",
+      "desc": "暂无文本"
+    },
+    "superite_2": {
+      "name": "迎宾中心慢食餐厅",
+      "desc": "暂无文本"
+    },
+    "superite_3": {
+      "name": "慢食餐厅左侧草地",
+      "desc": "暂无文本"
+    },
+    "superite_4": {
+      "name": "餐厅厨房",
+      "desc": "暂无文本"
+    },
+    "superite_5": {
+      "name": "衣服店",
+      "desc": "暂无文本"
+    },
+    "superite_6": {
+      "name": "靶場",
+      "desc": "暂无文本"
+    },
+    "superite_7": {
+      "name": "sart",
+      "desc": "暂无文本"
+    },
+    "superite_8": {
+      "name": "劇院左側海邊小屋",
+      "desc": "暂无文本"
+    },
+    "superite_9": {
+      "name": "劇院密室右側換裝室",
+      "desc": "暂无文本"
+    },
+    "superite_10": {
+      "name": "murre之森右下帳篷",
+      "desc": "暂无文本"
+    },
+    "superite_11": {
+      "name": "森林左上海邊",
+      "desc": "暂无文本"
+    },
+    "superite_12": {
+      "name": "森林右上箱子堆下面",
+      "desc": "暂无文本"
+    },
+    "superite_13": {
+      "name": "河狸建設總部水上小屋",
+      "desc": "暂无文本"
+    },
+    "superite_14": {
+      "name": "河狸建設總部中橋小屋",
+      "desc": "暂无文本"
+    },
+    "superite_15": {
+      "name": "度假村左側小屋",
+      "desc": "暂无文本"
+    },
+    "superite_16": {
+      "name": "沼澤上樹環繞營地",
+      "desc": "暂无文本"
+    },
+    "superite_17": {
+      "name": "鷹臨簡單舞台廁所",
+      "desc": "暂无文本"
+    },
+    "superite_18": {
+      "name": "鱷魚俱樂部右上帳篷",
+      "desc": "暂无文本"
+    },
+    "superite_19": {
+      "name": "沼澤墓地（小）中間",
+      "desc": "暂无文本"
+    },
+    "superite_20": {
+      "name": "倉鼠球體育場",
+      "desc": "暂无文本"
+    },
+    "superite_21": {
+      "name": "勝利島左側觀景台",
+      "desc": "暂无文本"
+    },
+    "superite_22": {
+      "name": "勝利島遊戲廳",
+      "desc": "暂无文本"
+    },
+    "superite_23": {
+      "name": "勝利島右下角落",
+      "desc": "暂无文本"
+    },
+    "superite_24": {
+      "name": "勝利島右上海邊小屋",
+      "desc": "暂无文本"
+    },
+    "superite_25": {
+      "name": "南部沿海小半島右下",
+      "desc": "暂无文本"
+    },
+    "superite_26": {
+      "name": "海洋公園右下",
+      "desc": "暂无文本"
+    },
+    "superite_27": {
+      "name": "海洋公園右上房子",
+      "desc": "暂无文本"
+    },
+    "superite_28": {
+      "name": "燈塔",
+      "desc": "暂无文本"
+    },
+    "superite_29": {
+      "name": "海洋公園左上洞窟",
+      "desc": "暂无文本"
+    },
+    "superite_30": {
+      "name": "農場右下金木森林帳篷",
+      "desc": "暂无文本"
+    },
+    "superite_31": {
+      "name": "農場右下茅坑",
+      "desc": "暂无文本"
+    },
+    "superite_32": {
+      "name": "農舍驢子王座左邊",
+      "desc": "暂无文本"
+    },
+    "superite_33": {
+      "name": "農舍左側倉儲區格子",
+      "desc": "暂无文本"
+    },
+    "superite_34": {
+      "name": "竹林度假村左側",
+      "desc": "暂无文本"
+    },
+    "superite_35": {
+      "name": "竹林度假村屋內右下",
+      "desc": "暂无文本"
+    },
+    "superite_36": {
+      "name": "竹林舞台左換裝室",
+      "desc": "暂无文本"
+    },
+    "superite_37": {
+      "name": "安保總部會議室",
+      "desc": "暂无文本"
+    },
+    "superite_38": {
+      "name": "安保總部右上監控室",
+      "desc": "暂无文本"
+    },
+    "superite_39": {
+      "name": "船廠綠集裝箱",
+      "desc": "暂无文本"
+    },
+    "superite_40": {
+      "name": "船廠紅集裝箱",
+      "desc": "暂无文本"
+    },
+    "superite_41": {
+      "name": "果汁加工廠下方營地左上房間",
+      "desc": "暂无文本"
+    },
+    "superite_42": {
+      "name": "生命果汁加工廠箱子堆",
+      "desc": "暂无文本"
+    },
+    "superite_43": {
+      "name": "果汁工廠右側鴨頭壁掛小屋",
+      "desc": "暂无文本"
+    },
+    "superite_44": {
+      "name": "果汁工廠右上營地白集裝箱",
+      "desc": "暂无文本"
+    },
+    "superite_45": {
+      "name": "蕉神洞前廳右下",
+      "desc": "暂无文本"
+    },
+    "superite_46": {
+      "name": "蕉神洞右側海邊角落",
+      "desc": "暂无文本"
+    },
+    "superite_47": {
+      "name": "實驗室右上小屋",
+      "desc": "暂无文本"
+    },
+    "superite_48": {
+      "name": "實驗室範圍內部右上房間",
+      "desc": "暂无文本"
+    },
+    "superite_49": {
+      "name": "實驗室內中區右長條屋",
+      "desc": "暂无文本"
+    },
+    "superite_50": {
+      "name": "實驗室內左側監獄",
+      "desc": "暂无文本"
+    },
+    "superite_51": {
+      "name": "實驗室左上洞窟",
+      "desc": "暂无文本"
+    },
+    "superite_52": {
+      "name": "鴯鹋牧場籠舍",
+      "desc": "暂无文本"
+    },
+    "superite_53": {
+      "name": "金字塔中央區左上",
+      "desc": "暂无文本"
+    },
+    "superite_54": {
+      "name": "紫晶山狹道右下區",
+      "desc": "暂无文本"
+    },
+    "superite_55": {
+      "name": "紫晶山反抗軍懸賞處",
+      "desc": "暂无文本"
+    },
+    "superite_56": {
+      "name": "紫晶山紫晶礦區",
+      "desc": "暂无文本"
+    },
+    "superite_57": {
+      "name": "紫晶山長滑索右下",
+      "desc": "暂无文本"
+    },
+    "superite_58": {
+      "name": "金字塔左下貧民窟藍房子",
+      "desc": "暂无文本"
+    },
+    "superite_59": {
+      "name": "紫晶山左側小橋帳篷",
+      "desc": "暂无文本"
+    },
+    "superite_60": {
+      "name": "滑溜溜冰湖左側三石頭",
+      "desc": "暂无文本"
+    },
+    "superite_61": {
+      "name": "雪原左邊緣帳篷",
+      "desc": "暂无文本"
+    },
+    "superite_62": {
+      "name": "雪原左上海邊緣",
+      "desc": "暂无文本"
+    },
+    "superite_63": {
+      "name": "滑溜溜湖左上滑索右下端",
+      "desc": "暂无文本"
+    },
+    "superite_64": {
+      "name": "滑溜溜湖左下冰屋",
+      "desc": "暂无文本"
+    },
+    "superite_65": {
+      "name": "企鵝宮殿左上外圍",
+      "desc": "暂无文本"
+    },
+    "superite_66": {
+      "name": "企鵝宮殿用餐區左上房間",
+      "desc": "暂无文本"
+    },
+    "superite_67": {
+      "name": "企鵝宮殿外圈冰走廊右上",
+      "desc": "暂无文本"
+    },
+    "superite_68": {
+      "name": "企鵝宮殿右上滑索上端帳篷",
+      "desc": "暂无文本"
+    },
+    "superite_69": {
+      "name": "托馬斯工坊雪橇床頭",
+      "desc": "暂无文本"
+    },
+    "superite_70": {
+      "name": "世界終末站左上帳篷",
+      "desc": "暂无文本"
+    }
+  },
+  "filter": {
+    "title": "展示类型",
+    "all": "全部",
+    "quicktravel": "MTN",
+    "landmarkname": "地标名称",
+    "superite": "紫晶",
+    "oldmei": "紫晶背包牛路线"
+  },
+  "close": "关闭",
   "footer": {
     "content": "Super Animal Royale 的名称以及任何相关名称、标志、和图像均为其各自所有者的注册商标。",
     "content1": "©",
