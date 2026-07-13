@@ -1,0 +1,22 @@
+{
+  "notfound": {
+    "title": "页面没找到...",
+    "content": "可能原因：未公开此页面、错误的访问路径等",
+    "back_to_home": "点击卡片返回主页"
+  },
+  "home": {
+    "title": "主页",
+    "content": "提供一些网站信息和浏览建议",
+    "members": "贡献成员"
+  },
+  "map": {
+    "title": "地图",
+    "content": "提供地图功能"
+  },
+  "footer": {
+    "content": "Super Animal Royale 的名称以及任何相关名称、标志、和图像均为其各自所有者的注册商标。",
+    "content1": "©",
+    "content3": "SAWTool",
+    "content4": "本站点为开源项目，如需贡献内容请前往"
+  }
+}

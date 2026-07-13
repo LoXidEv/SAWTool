@@ -1,5 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import NotFound from '../views/Error/Notfound.vue'
+import MapView from '../views/MapView.vue'
+import { setTheme } from 'mdui/functions/setTheme.js'
 
 import WebInfo from '@/WebInfo/config.json'
 
@@ -9,6 +12,14 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
+      path: '/:pathMatch(.*)*',
+      name: 'notfound',
+      meta: {
+        title: '404 - ' + SITE_NAME,
+      },
+      component: NotFound,
+    },
+    {
       path: '/',
       name: 'home',
       meta: {
@@ -17,20 +28,22 @@ const router = createRouter({
       component: HomeView,
     },
     {
-      path: '/about',
-      name: 'about',
+      path: '/map',
+      name: 'map',
       meta: {
-        title: 'About - ' + SITE_NAME,
+        title: 'Map - ' + SITE_NAME,
       },
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue'),
+      component: MapView,
     },
   ],
 })
 
 router.beforeEach((to, from) => {
+  if (localStorage.getItem('isDark') == 'true') {
+    setTheme('dark')
+  } else {
+    setTheme('light')
+  }
   if (to.meta.title) {
     document.title = to.meta.title
   }

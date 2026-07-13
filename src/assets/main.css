@@ -1,0 +1,33 @@
+@import './base.css';
+
+#app {
+  height: 100vh;
+  width: 100%;
+}
+
+.card {
+  padding: 20px;
+  width: 100%;
+
+  .card_title {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--text-color);
+  }
+
+  .card_content {
+    font-size: 16px;
+    color: var(--text-color);
+  }
+
+  .card_actions {
+    margin-top: 20px;
+  }
+
+  .link_text {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--theme-color-2);
+  }
+}
+

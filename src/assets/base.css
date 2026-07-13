@@ -35,9 +35,9 @@
   --theme-color-4: #00C0D1;
   --theme-color-4-oc: #00C0D1c7;
   --theme-color-4-oc-up: #00C0D14d;
-  --text-color: #2b3d4f;
-  --text-color-oc: #2b3d4fc7;
-  --text-color-oc-up: #2b3d4f25;
+  --text-color: #474440;
+  --text-color-oc: #474440c7;
+  --text-color-oc-up: #47444025;
   --card-border-radius: 8px;
 
   /* background-color: transparent !important; */
@@ -45,15 +45,14 @@
 
 html,
 body {
-  &.mdui-theme-light {
-  }
-  &.mdui-theme-dark {
-  }
+  &.mdui-theme-light {}
+
+  &.mdui-theme-dark {}
 
   min-width: 320px;
   padding: 0;
   margin: 0;
-  font-family: 'Poppins SemiBold';
+  font-family: 'Poppins Regular';
   color: var(--text-color);
 }
 
