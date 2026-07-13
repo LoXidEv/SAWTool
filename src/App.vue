@@ -66,7 +66,7 @@ export default {
       <mdui-top-app-bar-title v-else style="font-size: 16px;margin-left: 10px;">{{ $t('home.title')
         }}</mdui-top-app-bar-title>
 
-      <mdui-button-icon icon="settings--outlined" @click="isSetting = !isSetting"></mdui-button-icon>
+      <mdui-button-icon class="animate__animated animate__fadeIn" v-if="['map'].includes($route.name) == true" icon="settings--outlined" @click="isSetting = !isSetting"></mdui-button-icon>
 
       <mdui-dropdown class="m_navbar animate__animated animate__fadeIn">
         <mdui-button-icon slot="trigger" icon="menu--outlined"></mdui-button-icon>

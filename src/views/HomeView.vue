@@ -3,8 +3,8 @@ export default {
   data() {
     return {
       members: [
-        { name: '天冬氨酸', role: 'Website Dev', avatar: 'https://avatars.githubusercontent.com/u/110319858?v=4' },
-        // { name: 'FallingStar', role: '', avatar: '' },
+        { name: '天冬氨酸', role: 'Website dev', avatar: 'https://avatars.githubusercontent.com/u/110319858?v=4' },
+        { name: '角龙', role: 'Data stats', avatar: 'https://pic1.afdiancdn.com/user/1fc2d052ffaa11ea893152540025c377/avatar/d3a9fd4bd4769e3f212935a1484c7a23_w640_h639_s35.jpg' },
         // { name: '', role: '', avatar: '' },
         // { name: '', role: '', avatar: '' },
       ]
@@ -19,7 +19,6 @@ export default {
       <div class="card_title">{{ $t('home.title') }}</div>
       <div class="card_content">{{ $t('home.content') }}</div>
     </mdui-card>
-
     <mdui-card class="card">
       <div class="card_title">{{ $t('home.members') }}</div>
       <div class="members_list">
