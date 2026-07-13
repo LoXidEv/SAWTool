@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'Poppins Bold';
+  src: url('/font/Poppins-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Poppins SemiBold';
+  src: url('/font/Poppins-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'Poppins Regular';
+  src: url('/font/Poppins-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Material Icons Outlined';
+  src: url('/font/gok-H7zzDkdnRel8-DQ6KAXJ69wP1tGnf4ZGhUce.woff2') format('woff2');
+}
+
+:root {
+  --mdui-shape-corner-medium: 8px !important;
+  --mdui-shape-corner-full: 5px !important;
+  --mdui-shape-corner-extra-large: 8px !important;
+  --mdui-color-shadow-dark: 255, 255, 255 !important;
+  --theme-color-1: #ffb144;
+  --theme-color-1-oc: #ffb144c7;
+  --theme-color-1-oc-up: #ffb1444d;
+  --theme-color-2: #4056B0;
+  --theme-color-2-oc: #4056B0c7;
+  --theme-color-2-oc-up: #4056B04d;
+  --theme-color-3: #ff7a7a;
+  --theme-color-3-oc: #ff7a7ac7;
+  --theme-color-3-oc-up: #ff7a7a4d;
+  --theme-color-4: #00C0D1;
+  --theme-color-4-oc: #00C0D1c7;
+  --theme-color-4-oc-up: #00C0D14d;
+  --text-color: #2b3d4f;
+  --text-color-oc: #2b3d4fc7;
+  --text-color-oc-up: #2b3d4f25;
+  --card-border-radius: 8px;
+
+  /* background-color: transparent !important; */
+}
+
+html,
+body {
+  &.mdui-theme-light {
+  }
+  &.mdui-theme-dark {
+  }
+
+  min-width: 320px;
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins SemiBold';
+  color: var(--text-color);
+}
+
+.material-icons-outlined {
+  font-family: 'Material Icons Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
