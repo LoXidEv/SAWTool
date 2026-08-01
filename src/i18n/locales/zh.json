@@ -9,6 +9,43 @@
     "content": "提供一些网站信息和浏览建议",
     "members": "贡献成员"
   },
+  "skins": {
+    "title": "外观",
+    "content": "不知道怎么搭配衣服？没关系！来看看这些灵感吧",
+    "skinsDetail": {
+      "title": "外观详情",
+      "content": "查看外观详情",
+      "data": {
+        "skin": "外观：",
+        "author": "作者："
+      },
+      "config": "Wiki 资源索引：",
+      "configOwn": {
+        "Outfit": "装束",
+        "Facewear": "面部饰品",
+        "Hat": "头部饰品",
+        "Neckwear": "颈部饰品",
+        "Eyewear": "眼部饰品",
+        "Animal": "品种"
+      },
+      "button": {
+        "back": "返回列表"
+      }
+    },
+    "tages": {
+      "players": "社区玩家发布"
+    },
+    "button": {
+      "author": "作者",
+      "detail": "详情",
+      "star": "收藏"
+    },
+    "skinsAuthor": {
+      "title": "作者详情",
+      "content": "查看发布外观的作者",
+      "skinCount": "发布外观"
+    }
+  },
   "map": {
     "title": "地图",
     "content": "提供地图功能"

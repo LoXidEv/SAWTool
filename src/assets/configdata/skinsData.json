@@ -1,0 +1,59 @@
+{
+    "skinsData": {
+        "tages": [
+            "skins.tages.players"
+        ],
+        "author": [
+            {
+                "id": 1,
+                "name": "SAWTool",
+                "desc": "提供默认搭配以及装扮外观",
+                "avatar": "/image/sarlab-logo.webp"
+            },
+            {
+                "id": 2,
+                "name": "天冬氨酸",
+                "desc": "揽天冬之幽，品橘果之甘，饮清茶之淡，悟生活之简",
+                "avatar": "https://avatars.githubusercontent.com/u/110319858?v=4"
+            }
+        ],
+        "skins": [
+            {
+                "id": 1,
+                "authorId": 2,
+                "title": "椰子南瓜小猫",
+                "desc": "可爱可爱可爱可爱可爱可爱",
+                "tages": [
+                    "skins.tages.players"
+                ],
+                "config":[
+                    {
+                        "key": "Outfit_Oversized_Pullover",
+                        "own": "Outfit"
+                    },
+                    {
+                        "key": "Facewear_Blush",
+                        "own": "Facewear"
+                    },
+                    {
+                        "key": "Hat_Pumpkin_Hat",
+                        "own": "Hat"
+                    },
+                    {
+                        "key": "Neckwear_Red_Plaid_Scarf",
+                        "own": "Neckwear"
+                    },
+                    {
+                        "key": "Eyewear_White_Round_Glasses",
+                        "own": "Eyewear"
+                    },
+                    {
+                        "key": "Breed_Grey_Tabby_Cat",
+                        "own": "Animal"
+                    }
+                ],
+                "image": "/image/skins/loxi_260801_1.webp"
+            }
+        ]
+    }
+}

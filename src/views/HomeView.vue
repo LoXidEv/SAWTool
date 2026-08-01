@@ -46,9 +46,6 @@ export default {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 6px;
-  background: var(--text-color-oc-up);
-  border-radius: var(--card-border-radius);
 }
 
 .member_info {

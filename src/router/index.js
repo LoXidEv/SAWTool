@@ -3,6 +3,9 @@ import HomeView from '../views/HomeView.vue'
 import NotFound from '../views/Error/Notfound.vue'
 import MapView from '../views/MapView.vue'
 import { setTheme } from 'mdui/functions/setTheme.js'
+import SkinsView from '../views/Skins/SkinsView.vue'
+import SkinsDetail from '../views/Skins/SkinsDetail.vue'
+import SkinsAuthor from '../views/Skins/SkinsAuthor.vue'
 
 import WebInfo from '@/WebInfo/config.json'
 
@@ -18,6 +21,30 @@ const router = createRouter({
         title: '404 - ' + SITE_NAME,
       },
       component: NotFound,
+    },
+    {
+      path: '/skins',
+      name: 'skins',
+      meta: {
+        title: 'Skins - ' + SITE_NAME,
+      },
+      component: SkinsView,
+    },
+    {
+      path: '/skins/detail/:id',
+      name: 'skinsDetail',
+      meta: {
+        title: 'Skins Detail - ' + SITE_NAME,
+      },
+      component: SkinsDetail,
+    },
+    {
+      path: '/skins/author/:id',
+      name: 'skinsAuthor',
+      meta: {
+        title: 'Skins Author - ' + SITE_NAME,
+      },
+      component: SkinsAuthor,
     },
     {
       path: '/',

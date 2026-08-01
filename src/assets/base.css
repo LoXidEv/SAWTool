@@ -38,6 +38,9 @@
   --text-color: #474440;
   --text-color-oc: #474440c7;
   --text-color-oc-up: #47444025;
+  --border-color: #e0e0e0;
+  --border-color-oc: #e0e0e0c7;
+  --border-color-oc-up: #e0e0e04d;
   --card-border-radius: 8px;
 
   /* background-color: transparent !important; */

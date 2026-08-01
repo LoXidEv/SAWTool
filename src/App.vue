@@ -12,20 +12,21 @@ export default {
       isSetting: true,
       isDark: false,
       navItems: [
-        { icon: 'home--outlined', text: 'home.title', route: '/' },
-        { icon: 'map--outlined', text: 'map.title', route: '/map' },
+        { icon: 'home--outlined', text: 'home.title', route: '/', children: ["home"] },
+        { icon: 'map--outlined', text: 'map.title', route: '/map', children: ["map"] },
+        { icon: 'dry_cleaning--outlined', text: 'skins.title', route: '/skins', children: ["skinsDetail", "skins"] },
       ],
       filterType: mapMarkers.baseInfo.filter,
       selectedFilter: 'all'
     }
   },
   methods: {
-    GetTitle(path) {
-      console.log(path);
-      if (this.navItems.find(item => item.route == path)) {
-        return this.navItems.find(item => item.route == path).text;
+    GetTitle(name) {
+      // console.log(path);
+      if (this.navItems.find(item => item.children.includes(name))) {
+        return this.navItems.find(item => item.children.includes(name)).text;
       } else {
-        return "SAWTool";
+        return "notfound.title";
       }
     },
     ChangeTheme() {
@@ -47,8 +48,8 @@ export default {
 </script>
 
 <template>
-  <mdui-layout>
-    <mdui-navigation-rail class="m_navrail animate__animated animate__fadeIn" divider contained>
+  <mdui-layout class="layout">
+    <mdui-navigation-rail class="m_navrail animate__animated animate__fadeIn" divider>
       <img class="logo" src="/image/sarlab-logo.webp" slot="top">
       <!-- <mdui-button-icon @click="ChangeTheme" :icon="isDark ? 'light_mode--outlined' : 'dark_mode--outlined'"
         slot="bottom"></mdui-button-icon> -->
@@ -61,12 +62,13 @@ export default {
     <mdui-top-app-bar class="animate__animated animate__fadeIn" variant="small" scroll-target=".layout-main">
       <mdui-top-app-bar-title v-if="$route.name !== 'home'" style="font-size: 16px;margin-left: 10px;">{{
         $t('home.title') }} / {{
-          $t(GetTitle($route.path)) }}
+          $t(GetTitle($route.name)) }}
       </mdui-top-app-bar-title>
       <mdui-top-app-bar-title v-else style="font-size: 16px;margin-left: 10px;">{{ $t('home.title')
         }}</mdui-top-app-bar-title>
 
-      <mdui-button-icon class="animate__animated animate__fadeIn" v-if="['map'].includes($route.name) == true" icon="settings--outlined" @click="isSetting = !isSetting"></mdui-button-icon>
+      <mdui-button-icon class="animate__animated animate__fadeIn" v-if="['map'].includes($route.name) == true"
+        icon="settings--outlined" @click="isSetting = !isSetting"></mdui-button-icon>
 
       <mdui-dropdown class="m_navbar animate__animated animate__fadeIn">
         <mdui-button-icon slot="trigger" icon="menu--outlined"></mdui-button-icon>
@@ -108,6 +110,10 @@ export default {
 </template>
 
 <style scoped>
+.layout {
+  height: 100vh;
+}
+
 @media screen and (max-width: 680px) {
   .m_navrail {
     display: none !important;
