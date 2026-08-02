@@ -6,6 +6,7 @@ import { setTheme } from 'mdui/functions/setTheme.js'
 import SkinsView from '../views/Skins/SkinsView.vue'
 import SkinsDetail from '../views/Skins/SkinsDetail.vue'
 import SkinsAuthor from '../views/Skins/SkinsAuthor.vue'
+import SkinsEdit from '../views/Skins/SkinsEdit.vue'
 
 import WebInfo from '@/WebInfo/config.json'
 
@@ -45,6 +46,14 @@ const router = createRouter({
         title: 'Skins Author - ' + SITE_NAME,
       },
       component: SkinsAuthor,
+    },
+    {
+      path: '/skins/edit',
+      name: 'skinsEdit',
+      meta: {
+        title: 'Skins Edit - ' + SITE_NAME,
+      },
+      component: SkinsEdit,
     },
     {
       path: '/',

@@ -49,7 +49,7 @@ export default {
             <div v-for="config in skin.config" :key="config.key">
               <span class="detail_info_config_label">{{ $t(`skins.skinsDetail.configOwn.${config.own}`) }}</span>
               <a :href="`https://wiki.animalroyale.com/wiki/File:${config.key}.png`" target="_blank"
-                class="detail_info_config_item">{{ config.key }}</a>
+                class="detail_info_config_item">{{ decodeURIComponent(config.key) }}</a>
             </div>
           </div>
           <div class="detail_info_author_card">

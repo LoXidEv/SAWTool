@@ -14,7 +14,7 @@ export default {
       navItems: [
         { icon: 'home--outlined', text: 'home.title', route: '/', children: ["home"] },
         { icon: 'map--outlined', text: 'map.title', route: '/map', children: ["map"] },
-        { icon: 'dry_cleaning--outlined', text: 'skins.title', route: '/skins', children: ["skinsDetail", "skins"] },
+        { icon: 'dry_cleaning--outlined', text: 'skins.title', route: '/skins', children: ["skinsDetail", "skinsEdit", "skinsAuthor", "skins"] },
       ],
       filterType: mapMarkers.baseInfo.filter,
       selectedFilter: 'all'
@@ -85,7 +85,6 @@ export default {
         <Footer />
       </div>
       <div v-else>
-
         <mdui-card class="setting_card animate__animated animate__fadeIn" v-if="isSetting">
           <mdui-dropdown>
             <mdui-button slot="trigger">{{ $t('filter.title') }}</mdui-button>

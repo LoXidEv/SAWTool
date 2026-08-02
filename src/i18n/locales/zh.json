@@ -29,7 +29,8 @@
         "Animal": "品种"
       },
       "button": {
-        "back": "返回列表"
+        "back": "返回列表",
+        "edit": "编辑外观"
       }
     },
     "tages": {
@@ -44,6 +45,21 @@
       "title": "作者详情",
       "content": "查看发布外观的作者",
       "skinCount": "发布外观"
+    },
+    "skinsEdit": {
+      "title": "编辑外观",
+      "content": "提供上传所需的 Json 的简单配置功能",
+      "input": {
+        "skinName": "外观名称",
+        "skinDescription": "外观介绍",
+        "skinAuthor": "发布者ID",
+        "Search": "搜索 Key",
+        "skinImage": "外观图像链接"
+      },
+      "noResult": "无结果",
+      "button": {
+        "showAll": "显示所有"
+      }
     }
   },
   "map": {
