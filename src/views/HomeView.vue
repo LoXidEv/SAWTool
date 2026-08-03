@@ -5,7 +5,7 @@ export default {
       members: [
         { name: '天冬氨酸', role: 'Website dev', avatar: 'https://avatars.githubusercontent.com/u/110319858?v=4' },
         { name: '角龙', role: 'Data stats', avatar: 'https://pic1.afdiancdn.com/user/1fc2d052ffaa11ea893152540025c377/avatar/d3a9fd4bd4769e3f212935a1484c7a23_w640_h639_s35.jpg' },
-        // { name: '', role: '', avatar: '' },
+        { name: 'FallingStar', role: 'Data stats', avatar: '/image/other/FallingStar.webp' },
         // { name: '', role: '', avatar: '' },
       ]
     }
