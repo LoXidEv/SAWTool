@@ -49,7 +49,7 @@ export default {
       <mdui-button full-width variant="elevated" :disabled="switchPage.currentPage === 1" @click="switchSkins(-1)">
         {{ $t('skins.skinsDetail.button.prev') }}
       </mdui-button>
-      <mdui-chip elevated>{{ switchPage.currentPage }}/{{ switchPage.maxPage }}</mdui-chip>
+      <mdui-chip elevated>{{ switchPage.currentPage }} / {{ switchPage.maxPage }}</mdui-chip>
       <mdui-button full-width variant="elevated" :disabled="switchPage.currentPage === switchPage.maxPage" @click="switchSkins(1)">
         {{ $t('skins.skinsDetail.button.next') }}
       </mdui-button>
