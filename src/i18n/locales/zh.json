@@ -30,11 +30,12 @@
       },
       "button": {
         "back": "返回列表",
-        "edit": "编辑外观"
+        "edit": "生成外观 JSON"
       }
     },
     "tages": {
-      "players": "社区玩家发布"
+      "players": "社区外观",
+      "prefabricated": "预制外观"
     },
     "button": {
       "author": "作者",
@@ -47,7 +48,7 @@
       "skinCount": "发布外观"
     },
     "skinsEdit": {
-      "title": "编辑外观",
+      "title": "生成外观 JSON",
       "content": "提供上传所需的 Json 的简单配置功能",
       "input": {
         "skinName": "外观名称",
@@ -59,7 +60,8 @@
       "noResult": "无结果",
       "button": {
         "showAll": "显示所有"
-      }
+      },
+      "id": "当前正在编辑："
     }
   },
   "map": {

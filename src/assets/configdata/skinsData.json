@@ -19,14 +19,14 @@
         ],
         "skins": [
             {
-                "id": 1,
+                "id": 78,
                 "authorId": 2,
                 "title": "椰子南瓜小猫",
                 "desc": "可爱可爱可爱可爱可爱可爱",
                 "tages": [
                     "skins.tages.players"
                 ],
-                "config":[
+                "config": [
                     {
                         "key": "Outfit_Oversized_Pullover",
                         "own": "Outfit"
@@ -53,6 +53,853 @@
                     }
                 ],
                 "image": "/image/skins/loxi_260801_1.webp"
+            },
+            {
+                "id": 1,
+                "authorId": 1,
+                "title": "Prefabricated (1)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated1.webp"
+            },
+            {
+                "id": 2,
+                "authorId": 1,
+                "title": "Prefabricated (2)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated2.webp"
+            },
+            {
+                "id": 3,
+                "authorId": 1,
+                "title": "Prefabricated (3)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated3.webp"
+            },
+            {
+                "id": 4,
+                "authorId": 1,
+                "title": "Prefabricated (4)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated4.webp"
+            },
+            {
+                "id": 5,
+                "authorId": 1,
+                "title": "Prefabricated (5)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated5.webp"
+            },
+            {
+                "id": 6,
+                "authorId": 1,
+                "title": "Prefabricated (6)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated6.webp"
+            },
+            {
+                "id": 7,
+                "authorId": 1,
+                "title": "Prefabricated (7)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated7.webp"
+            },
+            {
+                "id": 8,
+                "authorId": 1,
+                "title": "Prefabricated (8)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated8.webp"
+            },
+            {
+                "id": 9,
+                "authorId": 1,
+                "title": "Prefabricated (9)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated9.webp"
+            },
+            {
+                "id": 10,
+                "authorId": 1,
+                "title": "Prefabricated (10)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated10.webp"
+            },
+            {
+                "id": 11,
+                "authorId": 1,
+                "title": "Prefabricated (11)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated11.webp"
+            },
+            {
+                "id": 12,
+                "authorId": 1,
+                "title": "Prefabricated (12)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated12.webp"
+            },
+            {
+                "id": 13,
+                "authorId": 1,
+                "title": "Prefabricated (13)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated13.webp"
+            },
+            {
+                "id": 14,
+                "authorId": 1,
+                "title": "Prefabricated (14)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated14.webp"
+            },
+            {
+                "id": 15,
+                "authorId": 1,
+                "title": "Prefabricated (15)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated15.webp"
+            },
+            {
+                "id": 16,
+                "authorId": 1,
+                "title": "Prefabricated (16)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated16.webp"
+            },
+            {
+                "id": 17,
+                "authorId": 1,
+                "title": "Prefabricated (17)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated17.webp"
+            },
+            {
+                "id": 18,
+                "authorId": 1,
+                "title": "Prefabricated (18)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated18.webp"
+            },
+            {
+                "id": 19,
+                "authorId": 1,
+                "title": "Prefabricated (19)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated19.webp"
+            },
+            {
+                "id": 20,
+                "authorId": 1,
+                "title": "Prefabricated (20)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated20.webp"
+            },
+            {
+                "id": 21,
+                "authorId": 1,
+                "title": "Prefabricated (21)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated21.webp"
+            },
+            {
+                "id": 22,
+                "authorId": 1,
+                "title": "Prefabricated (22)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated22.webp"
+            },
+            {
+                "id": 23,
+                "authorId": 1,
+                "title": "Prefabricated (23)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated23.webp"
+            },
+            {
+                "id": 24,
+                "authorId": 1,
+                "title": "Prefabricated (24)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated24.webp"
+            },
+            {
+                "id": 25,
+                "authorId": 1,
+                "title": "Prefabricated (25)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated25.webp"
+            },
+            {
+                "id": 26,
+                "authorId": 1,
+                "title": "Prefabricated (26)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated26.webp"
+            },
+            {
+                "id": 27,
+                "authorId": 1,
+                "title": "Prefabricated (27)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated27.webp"
+            },
+            {
+                "id": 28,
+                "authorId": 1,
+                "title": "Prefabricated (28)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated28.webp"
+            },
+            {
+                "id": 29,
+                "authorId": 1,
+                "title": "Prefabricated (29)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated29.webp"
+            },
+            {
+                "id": 30,
+                "authorId": 1,
+                "title": "Prefabricated (30)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated30.webp"
+            },
+            {
+                "id": 31,
+                "authorId": 1,
+                "title": "Prefabricated (31)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated31.webp"
+            },
+            {
+                "id": 32,
+                "authorId": 1,
+                "title": "Prefabricated (32)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated32.webp"
+            },
+            {
+                "id": 33,
+                "authorId": 1,
+                "title": "Prefabricated (33)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated33.webp"
+            },
+            {
+                "id": 34,
+                "authorId": 1,
+                "title": "Prefabricated (34)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated34.webp"
+            },
+            {
+                "id": 35,
+                "authorId": 1,
+                "title": "Prefabricated (35)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated35.webp"
+            },
+            {
+                "id": 36,
+                "authorId": 1,
+                "title": "Prefabricated (36)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated36.webp"
+            },
+            {
+                "id": 37,
+                "authorId": 1,
+                "title": "Prefabricated (37)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated37.webp"
+            },
+            {
+                "id": 38,
+                "authorId": 1,
+                "title": "Prefabricated (38)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated38.webp"
+            },
+            {
+                "id": 39,
+                "authorId": 1,
+                "title": "Prefabricated (39)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated39.webp"
+            },
+            {
+                "id": 40,
+                "authorId": 1,
+                "title": "Prefabricated (40)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated40.webp"
+            },
+            {
+                "id": 41,
+                "authorId": 1,
+                "title": "Prefabricated (41)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated41.webp"
+            },
+            {
+                "id": 42,
+                "authorId": 1,
+                "title": "Prefabricated (42)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated42.webp"
+            },
+            {
+                "id": 43,
+                "authorId": 1,
+                "title": "Prefabricated (43)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated43.webp"
+            },
+            {
+                "id": 44,
+                "authorId": 1,
+                "title": "Prefabricated (44)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated44.webp"
+            },
+            {
+                "id": 45,
+                "authorId": 1,
+                "title": "Prefabricated (45)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated45.webp"
+            },
+            {
+                "id": 46,
+                "authorId": 1,
+                "title": "Prefabricated (46)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated46.webp"
+            },
+            {
+                "id": 47,
+                "authorId": 1,
+                "title": "Prefabricated (47)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated47.webp"
+            },
+            {
+                "id": 48,
+                "authorId": 1,
+                "title": "Prefabricated (48)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated48.webp"
+            },
+            {
+                "id": 49,
+                "authorId": 1,
+                "title": "Prefabricated (49)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated49.webp"
+            },
+            {
+                "id": 50,
+                "authorId": 1,
+                "title": "Prefabricated (50)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated50.webp"
+            },
+            {
+                "id": 51,
+                "authorId": 1,
+                "title": "Prefabricated (51)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated51.webp"
+            },
+            {
+                "id": 52,
+                "authorId": 1,
+                "title": "Prefabricated (52)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated52.webp"
+            },
+            {
+                "id": 53,
+                "authorId": 1,
+                "title": "Prefabricated (53)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated53.webp"
+            },
+            {
+                "id": 54,
+                "authorId": 1,
+                "title": "Prefabricated (54)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated54.webp"
+            },
+            {
+                "id": 55,
+                "authorId": 1,
+                "title": "Prefabricated (55)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated55.webp"
+            },
+            {
+                "id": 56,
+                "authorId": 1,
+                "title": "Prefabricated (56)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated56.webp"
+            },
+            {
+                "id": 57,
+                "authorId": 1,
+                "title": "Prefabricated (57)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated57.webp"
+            },
+            {
+                "id": 58,
+                "authorId": 1,
+                "title": "Prefabricated (58)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated58.webp"
+            },
+            {
+                "id": 59,
+                "authorId": 1,
+                "title": "Prefabricated (59)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated59.webp"
+            },
+            {
+                "id": 60,
+                "authorId": 1,
+                "title": "Prefabricated (60)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated60.webp"
+            },
+            {
+                "id": 61,
+                "authorId": 1,
+                "title": "Prefabricated (61)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated61.webp"
+            },
+            {
+                "id": 62,
+                "authorId": 1,
+                "title": "Prefabricated (62)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated62.webp"
+            },
+            {
+                "id": 63,
+                "authorId": 1,
+                "title": "Prefabricated (63)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated63.webp"
+            },
+            {
+                "id": 64,
+                "authorId": 1,
+                "title": "Prefabricated (64)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated64.webp"
+            },
+            {
+                "id": 65,
+                "authorId": 1,
+                "title": "Prefabricated (65)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated65.webp"
+            },
+            {
+                "id": 66,
+                "authorId": 1,
+                "title": "Prefabricated (66)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated66.webp"
+            },
+            {
+                "id": 67,
+                "authorId": 1,
+                "title": "Prefabricated (67)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated67.webp"
+            },
+            {
+                "id": 68,
+                "authorId": 1,
+                "title": "Prefabricated (68)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated68.webp"
+            },
+            {
+                "id": 69,
+                "authorId": 1,
+                "title": "Prefabricated (69)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated69.webp"
+            },
+            {
+                "id": 70,
+                "authorId": 1,
+                "title": "Prefabricated (70)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated70.webp"
+            },
+            {
+                "id": 71,
+                "authorId": 1,
+                "title": "Prefabricated (71)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated71.webp"
+            },
+            {
+                "id": 72,
+                "authorId": 1,
+                "title": "Prefabricated (72)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated72.webp"
+            },
+            {
+                "id": 73,
+                "authorId": 1,
+                "title": "Prefabricated (73)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated73.webp"
+            },
+            {
+                "id": 74,
+                "authorId": 1,
+                "title": "Prefabricated (74)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated74.webp"
+            },
+            {
+                "id": 75,
+                "authorId": 1,
+                "title": "Prefabricated (75)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated75.webp"
+            },
+            {
+                "id": 76,
+                "authorId": 1,
+                "title": "Prefabricated (76)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated76.webp"
+            },
+            {
+                "id": 77,
+                "authorId": 1,
+                "title": "Prefabricated (77)",
+                "desc": "第一批次上传",
+                "tages": [
+                    "skins.tages.prefabricated"
+                ],
+                "config": [],
+                "image": "/image/skins/prefabricated/Prefabricated77.webp"
             }
         ]
     }

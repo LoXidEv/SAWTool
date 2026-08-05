@@ -1,11 +1,13 @@
 <script>
 import skinsKeyData from '@/assets/configdata/skinsKeyData.json'
+import SkinsData from '@/assets/configdata/skinsData.json'
 import hljs from 'highlight.js';
 import 'highlight.js/styles/github.css';
 
 export default {
   data() {
     return {
+      SkinsData: SkinsData.skinsData,
       skinsKeyData: skinsKeyData.skinsKeyData,
       Outfits: skinsKeyData.skinsKeyData.find(item => item.own == 'Outfit').key,
       Facewears: skinsKeyData.skinsKeyData.find(item => item.own == 'Facewear').key,
@@ -142,6 +144,9 @@ export default {
     },
   },
   mounted() {
+    if (this.$route.query.id) {
+      this.skinInfo = this.SkinsData.skins.find(item => item.id == this.$route.query.id)
+    }
     this.GenerateSkinJSON()
   }
 }
@@ -150,8 +155,9 @@ export default {
 <template>
   <div class="animate__animated animate__fadeIn">
     <mdui-card class="card">
-      <div class="card_title">{{ $t('skins.skinsEdit.title') }}</div>
+      <div class="card_title">{{ $t('skins.skinsEdit.title') }} </div>
       <div class="card_content">{{ $t('skins.skinsEdit.content') }}</div>
+      <div class="card_id" v-if="$route.query.id">{{ $t('skins.skinsEdit.id') + $route.query.id }}</div>
     </mdui-card>
     <mdui-button full-width variant="elevated" @click="$router.push('/skins')">{{ $t('skins.skinsDetail.button.back')
     }}</mdui-button>

@@ -44,7 +44,7 @@ export default {
           <div class="detail_info_tages">
             <div v-for="tag in skin.tages" :key="tag" class="detail_info_tag">{{ $t(tag) }}</div>
           </div>
-          <div class="detail_info_config">
+          <div class="detail_info_config" v-if="skin?.config?.length > 0">
             <div class="detail_info_config_title">{{ $t('skins.skinsDetail.config') }}</div>
             <div v-for="config in skin.config" :key="config.key">
               <span class="detail_info_config_label">{{ $t(`skins.skinsDetail.configOwn.${config.own}`) }}</span>
