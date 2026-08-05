@@ -27,13 +27,15 @@ export default {
     switchSkins(page) {
       this.switchPage.currentPage += page
       this.dealSkins = this.skinsData.skins.slice((this.switchPage.currentPage - 1) * this.switchPage.maxSkinCount, (this.switchPage.currentPage) * this.switchPage.maxSkinCount)
+      const skinsView = document.getElementById('skins_view')
+      skinsView.scrollIntoView({ behavior: 'smooth' })
     }
   },
 }
 </script>
 
 <template>
-  <div class="animate__animated animate__fadeIn">
+  <div class="animate__animated animate__fadeIn" id="skins_view">
     <mdui-card class="card">
       <div class="card_title">{{ $t('skins.title') }}</div>
       <div class="card_content">{{ $t('skins.content') }}</div>
@@ -50,7 +52,8 @@ export default {
         {{ $t('skins.skinsDetail.button.prev') }}
       </mdui-button>
       <mdui-chip elevated>{{ switchPage.currentPage }} / {{ switchPage.maxPage }}</mdui-chip>
-      <mdui-button full-width variant="elevated" :disabled="switchPage.currentPage === switchPage.maxPage" @click="switchSkins(1)">
+      <mdui-button full-width variant="elevated" :disabled="switchPage.currentPage === switchPage.maxPage"
+        @click="switchSkins(1)">
         {{ $t('skins.skinsDetail.button.next') }}
       </mdui-button>
     </div>
