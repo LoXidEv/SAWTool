@@ -181,7 +181,7 @@ export default {
         <div class="search_result">
           <div class="search_result_item" v-if="searchResult[own.own] == ''">{{ $t('skins.skinsEdit.noResult') }}</div>
           <button v-else class="search_result_item" @click="isSelected[own.own] = key"
-            :class="{ 'active': isSelected[own.own] == key }" v-for="key in searchResult[own.own]">{{ key }}</button>
+            :class="{ 'active': isSelected[own.own] == key }" v-for="key in searchResult[own.own]">{{ decodeURIComponent(key) }}</button>
         </div>
         <mdui-button variant="text" full-width @click="isShowAll[own.own] = !isShowAll[own.own]">{{
           $t('skins.skinsEdit.button.showAll') }}</mdui-button>
@@ -190,14 +190,14 @@ export default {
             <mdui-list-item slot="header" icon="near_me--outlined">
               <span v-if="isShowAll[own.own]">[{{ own.key.length }}]</span>
               <span style="color: var(--theme-color-2);font-weight: bold;">
-                {{ isSelected[own.own] }}
+                {{ decodeURIComponent(isSelected[own.own]) }}
               </span>
             </mdui-list-item>
             <div style="margin-left: 2.5rem" v-if="isShowAll[own.own]">
               <mdui-list-item v-for="key, index in own.key" @click="isSelected[own.own] = key" :key="key">
                 <span
                   :style="{ 'font-weight': isSelected[own.own] == key ? 'bold' : 'normal', 'color': isSelected[own.own] == key ? 'var(--theme-color-2)' : 'var(--text-color-oc)' }">
-                  [{{ index + 1 }}] {{ key }}
+                  [{{ index + 1 }}] {{ decodeURIComponent(key) }}
                 </span>
               </mdui-list-item>
             </div>
