@@ -30,7 +30,10 @@
       },
       "button": {
         "back": "返回列表",
-        "edit": "生成外观 JSON"
+        "edit": "生成外观 JSON",
+        "add": "查看更多",
+        "prev": "上一页",
+        "next": "下一页"
       }
     },
     "tages": {
