@@ -15,6 +15,7 @@ export default {
         { icon: 'home--outlined', text: 'home.title', route: '/', children: ["home"] },
         { icon: 'map--outlined', text: 'map.title', route: '/map', children: ["map"] },
         { icon: 'dry_cleaning--outlined', text: 'skins.title', route: '/skins', children: ["skinsDetail", "skinsEdit", "skinsAuthor", "skins"] },
+        { icon: 'card_giftcard--outlined', text: 'couponCodes.title', route: '/couponCodes', children: ["couponCodes"] },
       ],
       filterType: mapMarkers.baseInfo.filter,
       selectedFilter: 'all'
@@ -50,7 +51,7 @@ export default {
 <template>
   <mdui-layout class="layout">
     <mdui-navigation-rail class="m_navrail animate__animated animate__fadeIn" divider>
-      <img class="logo" src="/image/sarlab-logo.webp" slot="top">
+      <img class="logo" src="/image/sawtool-logo.webp" slot="top">
       <!-- <mdui-button-icon @click="ChangeTheme" :icon="isDark ? 'light_mode--outlined' : 'dark_mode--outlined'"
         slot="bottom"></mdui-button-icon> -->
 

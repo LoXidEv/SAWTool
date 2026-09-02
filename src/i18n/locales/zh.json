@@ -527,5 +527,20 @@
     "content1": "©",
     "content3": "SAWTool",
     "content4": "本站点为开源项目，如需贡献内容请前往"
+  },
+  "couponCodes": {
+    "title": "兑换码",
+    "content": "让玩家可以于游戏中输入并使用来换取限定外观造型以及游戏物品的序号",
+    "copySuccess": "复制成功，兑换码为：",
+    "copyFailed": "复制失败，兑换码为：",
+    "seasonalCodes": "季节性兑换码",
+    "seasonalSubtitle": "通常在相关时间段内可用，当前倒计时表示大概推测",
+    "normalCodes": "活跃兑换码",
+    "normalSubtitle": "目前有效而且可以使用",
+    "permanent": "永久",
+    "availableNow": "活跃",
+    "upcoming": "即将到来",
+    "seasonEnded": "近期已结束",
+    "expired": "已过期"
   }
 }
