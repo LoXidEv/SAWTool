@@ -14,7 +14,7 @@ import { i18n } from '@/i18n/i18n.js'
 import 'mdui/mdui.css'
 import 'mdui'
 import { setColorScheme } from 'mdui/functions/setColorScheme.js'
-setColorScheme('#4056B0')
+setColorScheme('#4a6293')
 
 // Animate.css Config
 import 'animate.css'

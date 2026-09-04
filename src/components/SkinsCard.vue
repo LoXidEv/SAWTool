@@ -35,7 +35,8 @@ export default {
         <div class="skin_buttons">
             <mdui-button-icon variant="standard" @click="$router.push(`/skins/detail/${skin.id}`)"
                 icon="pageview--outlined"></mdui-button-icon>
-            <mdui-button-icon variant="standard" icon="edit--outlined" @click="$router.push(`/skins/edit?id=${skin.id}`)"></mdui-button-icon>
+            <mdui-button-icon variant="standard" icon="edit--outlined"
+                @click="$router.push(`/skins/edit?id=${skin.id}`)"></mdui-button-icon>
         </div>
     </mdui-card>
 </template>

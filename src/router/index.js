@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import NotFound from '../views/Error/Notfound.vue'
 import MapView from '../views/MapView.vue'
+import MapToolView from '../views/MapToolView.vue'
 import { setTheme } from 'mdui/functions/setTheme.js'
 import SkinsView from '../views/Skins/SkinsView.vue'
 import SkinsDetail from '../views/Skins/SkinsDetail.vue'
@@ -79,6 +80,15 @@ const router = createRouter({
         title: 'Map - ' + SITE_NAME,
       },
       component: MapView,
+    },
+    {
+      path: '/map/tool',
+      name: 'mapTool',
+      meta: {
+        title: 'Map Tool - ' + SITE_NAME,
+        blank: true,
+      },
+      component: MapToolView,
     },
   ],
 })

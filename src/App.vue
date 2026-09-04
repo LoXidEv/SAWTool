@@ -49,7 +49,8 @@ export default {
 </script>
 
 <template>
-  <mdui-layout class="layout">
+  <RouterView v-if="$route.meta.blank" :filterValue="selectedFilter" />
+  <mdui-layout v-else class="layout">
     <mdui-navigation-rail class="m_navrail animate__animated animate__fadeIn" divider>
       <img class="logo" src="/image/sawtool-logo.webp" slot="top">
       <!-- <mdui-button-icon @click="ChangeTheme" :icon="isDark ? 'light_mode--outlined' : 'dark_mode--outlined'"
@@ -68,9 +69,6 @@ export default {
       <mdui-top-app-bar-title v-else style="font-size: 16px;margin-left: 10px;">{{ $t('home.title')
         }}</mdui-top-app-bar-title>
 
-      <mdui-button-icon class="animate__animated animate__fadeIn" v-if="['map'].includes($route.name) == true"
-        icon="settings--outlined" @click="isSetting = !isSetting"></mdui-button-icon>
-
       <mdui-dropdown class="m_navbar animate__animated animate__fadeIn">
         <mdui-button-icon slot="trigger" icon="menu--outlined"></mdui-button-icon>
         <mdui-menu>
@@ -86,16 +84,6 @@ export default {
         <Footer />
       </div>
       <div v-else>
-        <mdui-card class="setting_card animate__animated animate__fadeIn" v-if="isSetting">
-          <mdui-dropdown>
-            <mdui-button slot="trigger">{{ $t('filter.title') }}</mdui-button>
-            <mdui-menu v-model="selectedFilter">
-              <mdui-menu-item value="all" @click="handleFilterChange('all')">{{ $t('filter.all') }}</mdui-menu-item>
-              <mdui-menu-item v-for="type in filterType" :key="type.type" :value="type.type"
-                @click="handleFilterChange(type.type)">{{ $t(type.name) }}</mdui-menu-item>
-            </mdui-menu>
-          </mdui-dropdown>
-        </mdui-card>
         <RouterView :filterValue="selectedFilter" />
       </div>
     </mdui-layout-main>
@@ -122,22 +110,6 @@ export default {
   .m_navbar {
     display: flex !important;
   }
-}
-
-.setting_card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 10px 20px;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 1000;
-}
-
-.filter_select {
-  width: 120px;
 }
 
 .m_navbar {
