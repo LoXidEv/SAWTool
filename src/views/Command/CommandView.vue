@@ -391,25 +391,7 @@ export default {
                 <p>{{ $t('commands.emptyHint') }}</p>
             </div>
         </mdui-card>
-        <mdui-card class="panel catalog_card">
-            <div class="panel_title">
-                <mdui-icon name="list_alt--outlined"></mdui-icon>
-                <span>{{ $t('commands.catalog') }}</span>
-            </div>
-            <mdui-collapse :value="expandedGroups" @change="expandedGroups = $event.target.value">
-                <mdui-collapse-item v-for="(group, gIdx) in commandGroups" :key="group.label" :value="'g' + gIdx">
-                    <mdui-list-item :icon="group.icon" slot="header">
-                        {{ group.label }}
-                    </mdui-list-item>
-                    <div>
-                        <mdui-list-item v-for="cmd in group.commands" :key="cmd.name" rounded
-                            :active="selectedCmd && selectedCmd.name === cmd.name" @click="selectCmd(cmd)">
-                            {{ cmd.cnName || cmd.name }}</mdui-list-item>
-                    </div>
-                </mdui-collapse-item>
-            </mdui-collapse>
-        </mdui-card>
-        <mdui-card class="panel output_card">
+<mdui-card class="panel output_card">
             <div class="panel_title">
                 <mdui-icon name="list--outlined"></mdui-icon>
                 <span>{{ $t('commands.list') }}</span>
@@ -437,6 +419,25 @@ export default {
                     $t('commands.add') }}</mdui-button>
             <div v-if="!canAdd && currentCmdStr" class="cannot_add">{{ $t('commands.cannotAdd') }}</div>
         </mdui-card>
+        <mdui-card class="panel catalog_card">
+            <div class="panel_title">
+                <mdui-icon name="list_alt--outlined"></mdui-icon>
+                <span>{{ $t('commands.catalog') }}</span>
+            </div>
+            <mdui-collapse :value="expandedGroups" @change="expandedGroups = $event.target.value">
+                <mdui-collapse-item v-for="(group, gIdx) in commandGroups" :key="group.label" :value="'g' + gIdx">
+                    <mdui-list-item :icon="group.icon" slot="header">
+                        {{ group.label }}
+                    </mdui-list-item>
+                    <div>
+                        <mdui-list-item v-for="cmd in group.commands" :key="cmd.name" rounded
+                            :active="selectedCmd && selectedCmd.name === cmd.name" @click="selectCmd(cmd)">
+                            {{ cmd.cnName || cmd.name }}</mdui-list-item>
+                    </div>
+                </mdui-collapse-item>
+            </mdui-collapse>
+        </mdui-card>
+        
     </div>
 </template>
 
