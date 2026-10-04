@@ -16,6 +16,7 @@ export default {
         { icon: 'map--outlined', text: 'map.title', route: '/map', children: ["map"] },
         { icon: 'dry_cleaning--outlined', text: 'skins.title', route: '/skins', children: ["skinsDetail", "skinsEdit", "skinsAuthor", "skins"] },
         { icon: 'card_giftcard--outlined', text: 'couponCodes.title', route: '/couponCodes', children: ["couponCodes"] },
+        { icon: 'terminal--outlined', text: 'commands.title', route: '/commands', children: ["commands"] },
       ],
       filterType: mapMarkers.baseInfo.filter,
       selectedFilter: 'all'

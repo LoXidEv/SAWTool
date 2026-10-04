@@ -9,6 +9,7 @@ import SkinsDetail from '../views/Skins/SkinsDetail.vue'
 import SkinsAuthor from '../views/Skins/SkinsAuthor.vue'
 import SkinsEdit from '../views/Skins/SkinsEdit.vue'
 import CouponCodesList from '../views/CouponCodes/CouponCodesList.vue'
+import CommandView from '../views/Command/CommandView.vue'
 
 import WebInfo from '@/WebInfo/config.json'
 
@@ -72,6 +73,14 @@ const router = createRouter({
         title: 'Home - ' + SITE_NAME,
       },
       component: HomeView,
+    },
+    {
+      path: '/commands',
+      name: 'commands',
+      meta: {
+        title: 'Commands - ' + SITE_NAME,
+      },
+      component: CommandView,
     },
     {
       path: '/map',

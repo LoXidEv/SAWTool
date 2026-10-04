@@ -3,9 +3,10 @@ export default {
   data() {
     return {
       members: [
-        { name: '天冬氨酸', role: 'Website dev', avatar: 'https://avatars.githubusercontent.com/u/110319858?v=4' },
-        { name: '角龙', role: 'Data stats', avatar: 'https://pic1.afdiancdn.com/user/1fc2d052ffaa11ea893152540025c377/avatar/d3a9fd4bd4769e3f212935a1484c7a23_w640_h639_s35.jpg' },
-        { name: 'FallingStar', role: 'Data stats', avatar: '/image/other/FallingStar.webp' },
+        { name: '天冬氨酸', role: '网站开发', avatar: 'https://loxi.work/share/avatar.webp' },
+        { name: '小雪悠(ᐡ⸝⸝- ̫ -⸝⸝ᐡ)', role: '私人对局指令开发', avatar: '/image/other/SnowRow.webp' },
+        { name: '角龙', role: '数据统计', avatar: 'https://pic1.afdiancdn.com/user/1fc2d052ffaa11ea893152540025c377/avatar/d3a9fd4bd4769e3f212935a1484c7a23_w640_h639_s35.jpg' },
+        { name: 'FallingStar', role: '数据统计', avatar: '/image/other/FallingStar.webp' },
         // { name: '', role: '', avatar: '' },
       ]
     }

@@ -76,3 +76,11 @@ body {
   font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased;
 }
+
+/* 限制菜单最大高度并允许内部滚动，避免长下拉菜单超出可视窗口
+   mdui-select 的菜单位于其 shadow DOM 内，需要通过 ::part(menu) 指定 */
+mdui-menu,
+mdui-select::part(menu) {
+  max-height: min(320px, calc(100vh - 24px));
+  overflow-y: auto;
+}

@@ -154,7 +154,7 @@ export default {
 
             <mdui-dialog class="map-marker-detail" :open="showTempDialog" headline-position="center" @close="CloseTempDetail">
                 <div v-if="selectedTempItem" slot="headline">
-                    <span style="display:inline-block;vertical-align:middle;margin-right:8px;font-size:12px;padding:2px 8px;border-radius:999px;background:var(--theme-color-2-oc-up);color:var(--theme-color-2);">临时</span>
+                    <mdui-chip variant="filled" style="margin-right:8px;vertical-align:middle;">临时</mdui-chip>
                     {{ selectedTempItem.name ? i18nText(selectedTempItem.name) : selectedTempItem.id }}
                 </div>
                 <div class="map-marker-content" v-if="selectedTempItem">
