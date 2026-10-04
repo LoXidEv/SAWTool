@@ -317,11 +317,40 @@ export default {
             <div class="card_content">{{ $t('commands.content') }}</div>
         </mdui-card>
         <div class="panel_main">
+            <mdui-card class="panel output_card">
+                <div class="panel_title">
+                    <mdui-icon name="list--outlined"></mdui-icon>
+                    <span>{{ $t('commands.list') }}</span>
+                    <mdui-button v-if="instructionList.length > 0" variant="text" icon="delete_sweep--outlined"
+                        @click="clearList">{{ $t('commands.clear') }}</mdui-button>
+                </div>
+
+                <div v-if="instructionList.length > 0" class="instruction_list">
+                    <mdui-card v-for="(item, idx) in instructionList" :key="idx" variant="filled"
+                        class="instruction_item">
+                        <span class="item_text">{{ item.text }}</span>
+                        <div class="item_right">
+                            <span class="item_chars" :class="item.chars <= 70 ? 'ok' : 'err'">{{ item.chars }}</span>
+                            <mdui-button-icon icon="content_copy--outlined"
+                                @click="copySingle(item.text)"></mdui-button-icon>
+                        </div>
+                    </mdui-card>
+                </div>
+                <div v-else class="empty_state">
+                    <mdui-icon name="inbox--outlined"></mdui-icon>
+                    <p>{{ $t('commands.empty') }}</p>
+                </div>
+
+                <mdui-button full-width variant="filled" icon="add_circle--outlined" :disabled="!canAdd"
+                    @click="addToList">{{
+                        $t('commands.add') }}</mdui-button>
+                <div v-if="!canAdd && currentCmdStr" class="cannot_add">{{ $t('commands.cannotAdd') }}</div>
+            </mdui-card>
             <mdui-card class="panel form_card">
                 <div class="panel_title">
                     <mdui-icon name="build--outlined"></mdui-icon>
                     <span>{{ selectedCmd ? (selectedCmd.cnName || selectedCmd.name) : $t('commands.selectHint')
-                    }}</span>
+                        }}</span>
                 </div>
                 <div class="presets">
                     <span class="presets_label">{{ $t('commands.presets') }}</span>
@@ -348,7 +377,7 @@ export default {
                         @change="onTeleportSpotChange($event.target.value)">
                         <mdui-menu-item value="">{{ $t('commands.teleportPlaceholder') }}</mdui-menu-item>
                         <mdui-menu-item v-for="spot in teleportSpots" :key="spot.name" :value="spot.name">{{ spot.name
-                        }}
+                            }}
                         </mdui-menu-item>
                     </mdui-select>
                     <div v-if="isWeightCmd" class="weight_block">
@@ -370,7 +399,7 @@ export default {
                         </div>
                         <mdui-button variant="tonal" icon="add--outlined" @click="addWeightRow">{{
                             $t('commands.weightAdd')
-                        }}
+                            }}
                         </mdui-button>
                     </div>
                     <mdui-card v-if="selectedCmd.notes" variant="filled" class="notes_card">
@@ -414,35 +443,6 @@ export default {
                         </div>
                     </mdui-collapse-item>
                 </mdui-collapse>
-            </mdui-card>
-            <mdui-card class="panel output_card">
-                <div class="panel_title">
-                    <mdui-icon name="list--outlined"></mdui-icon>
-                    <span>{{ $t('commands.list') }}</span>
-                    <mdui-button v-if="instructionList.length > 0" variant="text" icon="delete_sweep--outlined"
-                        @click="clearList">{{ $t('commands.clear') }}</mdui-button>
-                </div>
-
-                <div v-if="instructionList.length > 0" class="instruction_list">
-                    <mdui-card v-for="(item, idx) in instructionList" :key="idx" variant="filled"
-                        class="instruction_item">
-                        <span class="item_text">{{ item.text }}</span>
-                        <div class="item_right">
-                            <span class="item_chars" :class="item.chars <= 70 ? 'ok' : 'err'">{{ item.chars }}</span>
-                            <mdui-button-icon icon="content_copy--outlined"
-                                @click="copySingle(item.text)"></mdui-button-icon>
-                        </div>
-                    </mdui-card>
-                </div>
-                <div v-else class="empty_state">
-                    <mdui-icon name="inbox--outlined"></mdui-icon>
-                    <p>{{ $t('commands.empty') }}</p>
-                </div>
-
-                <mdui-button full-width variant="filled" icon="add_circle--outlined" :disabled="!canAdd"
-                    @click="addToList">{{
-                        $t('commands.add') }}</mdui-button>
-                <div v-if="!canAdd && currentCmdStr" class="cannot_add">{{ $t('commands.cannotAdd') }}</div>
             </mdui-card>
         </div>
     </div>
