@@ -526,11 +526,11 @@ export default {
                 <mdui-button-icon icon="remove--outlined" :disabled="transform.scale <= minScale + 0.01" @click="zoomOut"
                     title="缩小"></mdui-button-icon>
             </mdui-card>
-
+<!-- 
             <mdui-card class="control-group slider-group">
                 <mdui-slider :value="transform.scale" :min="minScale" :max="maxScale" :step="0.01"
                     @input="setScaleBySlider($event.target.value)"></mdui-slider>
-            </mdui-card>
+            </mdui-card> -->
 
             <mdui-card class="control-group action-group">
                 <mdui-button-icon icon="center_focus_strong--outlined" @click="focusFirstMarker"

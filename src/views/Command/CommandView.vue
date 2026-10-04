@@ -49,7 +49,7 @@ export default {
                         { name: '/soccer', cnName: '生成足球', fields: [], notes: '生成一个足球（同时只能存在一个）' },
                         { name: '/saw', cnName: '移至SAW阵营', fields: [{ key: 'playerId', label: '玩家编号', type: 'text', required: true }], notes: '将指定玩家移动到SAW阵营' },
                         { name: '/rebel', cnName: '移至反抗军阵营', fields: [{ key: 'playerId', label: '玩家编号', type: 'text', required: true }], notes: '将指定玩家移动到反抗军阵营' },
-                        { name: '/pet', cnName: '开关迷你动物', fields: [{ key: 'state', label: '状态', type: 'select', options: [{ label: '禁用', value: 'disable' }, { label: '启用', value: 'enable' }] }], build: (v) => '/pet ' + v.state },
+                        { name: '/pet', cnName: '开关迷你动物', fields: [], notes: '第一次输入为关再次输入为撤回' },
                         { name: '/mystery', cnName: '强制切换模式', fields: [{ key: 'mode', label: '模式编号', type: 'number', required: true }], notes: '神秘模式切换模式（注意：切换到日当正午再切回其他模式，帽子不会恢复）' },
                         { name: '/weight', cnName: '设置生成权重', fields: [], isWeight: true, notes: '可同时设置多个标签，请注意顺序，总字符 ≤ 70 1是游戏正常的倍数。例如：先 all 0 再 gunak 5 (轮换武器当天没有轮换上，就算权重5也不会生成)' },
                         { name: '/gasoff', cnName: '禁用毒气', fields: [], notes: '禁用超级臭鼬毒气（仅在大厅或毒气生成前有效）' },
@@ -109,8 +109,8 @@ export default {
                         { name: '/giant', cnName: '生成巨大树懒', fields: [], notes: '生成一个巨大树懒，若场上已经有巨大树懒则为清除' },
                         { name: '/boss', cnName: '生成超级星鼻鼹', fields: [], notes: '生成超级星鼻鼹' },
                         {
-                            name: '/gun', cnName: '生成指定武器', fields: [
-                                { key: 'gunId', label: '武器编号 (0-24) 0-手枪 1-双持 2-左轮 3-沙鹰 4-消音 5-霰弹 6-虎喷 7-冲锋枪 8-托马斯 9-AK 10-M16 11-飞镖枪 12-大飞镖枪 13-猎枪 14-狙击枪 15-能量枪 16-X激光炮 17-机枪 18-弓 19-弩 20-BCG 21-三管 22-尸弩 23-《孙宇智》24-《两个孙宇智》', type: 'number', min: 0, max: 19, required: true },
+                            name: '/gun', cnName: '生成指定武器', notes: '武器编号 (0-24) 0-手枪 1-双持 2-左轮 3-沙鹰 4-消音 5-霰弹 6-虎喷 7-冲锋枪 8-托马斯 9-AK 10-M16 11-飞镖枪 12-大飞镖枪 13-猎枪 14-狙击枪 15-能量枪 16-X激光炮 17-机枪 18-弓 19-弩 20-BCG 21-三管 22-尸弩 23-《孙宇智》24-《两个孙宇智》', fields: [
+                                { key: 'gunId', label: '武器编号', type: 'number', min: 0, max: 19, required: true },
                                 { key: 'rarity', label: '稀有度 (0普通 / 1罕见 / 2稀有/ 3史诗/4传说，可选)', type: 'number', min: 0, max: 2, placeholder: '可选' }
                             ], build: (v) => { let s = '/gun' + v.gunId; if (v.rarity !== undefined && v.rarity !== '') s += ' ' + v.rarity; return s; }
                         },
@@ -123,7 +123,7 @@ export default {
                             name: '/ammo', cnName: '生成子弹', fields: [
                                 { key: 'type', label: '子弹类型编号', type: 'number', required: true },
                                 { key: 'count', label: '数量', type: 'number', min: 1, required: true }
-                            ]
+                            ], build: (v) => '/ammo' + v.type + ' ' + v.count
                         },
                         {
                             name: '/armor', cnName: '生成护甲', fields: [
@@ -151,7 +151,7 @@ export default {
                 { label: '激光枪', value: 'lmg' },
                 { label: '弓弩类', value: 'bow' },
                 { label: '重型武器', value: 'heavy' },
-                { label: '投掷物道具', value: 'mine' },
+                { label: '招财猫地雷', value: 'mine' },
                 { label: '手枪', value: 'gunpistol' },
                 { label: '双持手枪', value: 'gundualpistol' },
                 { label: '马格南', value: 'gunmagnum' },
@@ -316,141 +316,157 @@ export default {
             <div class="card_title">{{ $t('commands.title') }}</div>
             <div class="card_content">{{ $t('commands.content') }}</div>
         </mdui-card>
-        <mdui-card class="panel form_card">
-            <div class="panel_title">
-                <mdui-icon name="build--outlined"></mdui-icon>
-                <span>{{ selectedCmd ? (selectedCmd.cnName || selectedCmd.name) : $t('commands.selectHint') }}</span>
-            </div>
-            <div class="presets">
-                <span class="presets_label">{{ $t('commands.presets') }}</span>
-                <mdui-chip v-for="(preset, idx) in presets" :key="idx" @click="loadPreset(preset)">{{ preset.name }}
-                </mdui-chip>
-            </div>
-            <div v-if="selectedCmd" class="cmd_form">
-                <template v-for="field in selectedCmd.fields" :key="field.key">
-                    <mdui-select v-if="field.type === 'select'" variant="outlined"
-                        :label="field.label + (field.required ? ' *' : '')" :value="formValues[field.key]"
-                        @change="setFormValue(field.key, $event.target.value)">
-                        <mdui-menu-item v-for="opt in field.options" :key="opt.value" :value="opt.value">{{ opt.label }}
+        <div class="panel_main">
+            <mdui-card class="panel form_card">
+                <div class="panel_title">
+                    <mdui-icon name="build--outlined"></mdui-icon>
+                    <span>{{ selectedCmd ? (selectedCmd.cnName || selectedCmd.name) : $t('commands.selectHint')
+                    }}</span>
+                </div>
+                <div class="presets">
+                    <span class="presets_label">{{ $t('commands.presets') }}</span>
+                    <mdui-chip v-for="(preset, idx) in presets" :key="idx" @click="loadPreset(preset)">{{ preset.name }}
+                    </mdui-chip>
+                </div>
+                <div v-if="selectedCmd" class="cmd_form">
+                    <template v-for="field in selectedCmd.fields" :key="field.key">
+                        <mdui-select v-if="field.type === 'select'" variant="outlined"
+                            :label="field.label + (field.required ? ' *' : '')" :value="formValues[field.key]"
+                            @change="setFormValue(field.key, $event.target.value)">
+                            <mdui-menu-item v-for="opt in field.options" :key="opt.value" :value="opt.value">{{
+                                opt.label }}
+                            </mdui-menu-item>
+                        </mdui-select>
+                        <mdui-text-field v-else variant="outlined" :type="field.type === 'number' ? 'number' : 'text'"
+                            :label="field.label + (field.required ? ' *' : '')" :value="formValues[field.key]"
+                            :min="field.min" :max="field.max" :step="field.step" :placeholder="field.placeholder || ''"
+                            :helper="field.desc"
+                            @input="setFormValue(field.key, $event.target.value)"></mdui-text-field>
+                    </template>
+                    <mdui-select v-if="selectedCmd.name === '/tele'" variant="outlined"
+                        :label="$t('commands.teleportLabel')" :placeholder="$t('commands.teleportPlaceholder')"
+                        @change="onTeleportSpotChange($event.target.value)">
+                        <mdui-menu-item value="">{{ $t('commands.teleportPlaceholder') }}</mdui-menu-item>
+                        <mdui-menu-item v-for="spot in teleportSpots" :key="spot.name" :value="spot.name">{{ spot.name
+                        }}
                         </mdui-menu-item>
                     </mdui-select>
-                    <mdui-text-field v-else variant="outlined" :type="field.type === 'number' ? 'number' : 'text'"
-                        :label="field.label + (field.required ? ' *' : '')" :value="formValues[field.key]"
-                        :min="field.min" :max="field.max" :step="field.step" :placeholder="field.placeholder || ''"
-                        :helper="field.desc" @input="setFormValue(field.key, $event.target.value)"></mdui-text-field>
-                </template>
-                <mdui-select v-if="selectedCmd.name === '/tele'" variant="outlined"
-                    :label="$t('commands.teleportLabel')" :placeholder="$t('commands.teleportPlaceholder')"
-                    @change="onTeleportSpotChange($event.target.value)">
-                    <mdui-menu-item value="">{{ $t('commands.teleportPlaceholder') }}</mdui-menu-item>
-                    <mdui-menu-item v-for="spot in teleportSpots" :key="spot.name" :value="spot.name">{{ spot.name }}
-                    </mdui-menu-item>
-                </mdui-select>
-                <div v-if="isWeightCmd" class="weight_block">
-                    <div class="form_label">{{ $t('commands.weightLabel') }}</div>
-                    <div class="weight_dynamic">
-                        <div v-for="(row, rIdx) in weightRows" :key="rIdx" class="weight_row">
-                            <mdui-select class="weight_select" variant="outlined"
-                                :placeholder="$t('commands.weightPlaceholder')" :value="row.tagValue"
-                                @change="row.tagValue = $event.target.value">
-                                <mdui-menu-item v-for="tag in weightTags" :key="tag.value" :value="tag.value">{{
-                                    tag.label }}</mdui-menu-item>
-                            </mdui-select>
-                            <mdui-text-field class="weight_input" variant="outlined" type="number" min="0" max="5"
-                                step="0.1" :value="row.weight" :placeholder="$t('commands.weightPlaceholderShort')"
-                                @input="row.weight = $event.target.value"></mdui-text-field>
-                            <mdui-button-icon v-if="weightRows.length > 1" icon="remove_circle--outlined"
-                                @click="removeWeightRow(rIdx)"></mdui-button-icon>
+                    <div v-if="isWeightCmd" class="weight_block">
+                        <div class="form_label">{{ $t('commands.weightLabel') }}</div>
+                        <div class="weight_dynamic">
+                            <div v-for="(row, rIdx) in weightRows" :key="rIdx" class="weight_row">
+                                <mdui-select class="weight_select" variant="outlined"
+                                    :placeholder="$t('commands.weightPlaceholder')" :value="row.tagValue"
+                                    @change="row.tagValue = $event.target.value">
+                                    <mdui-menu-item v-for="tag in weightTags" :key="tag.value" :value="tag.value">{{
+                                        tag.label }}</mdui-menu-item>
+                                </mdui-select>
+                                <mdui-text-field class="weight_input" variant="outlined" type="number" min="0" max="5"
+                                    step="0.1" :value="row.weight" :placeholder="$t('commands.weightPlaceholderShort')"
+                                    @input="row.weight = $event.target.value"></mdui-text-field>
+                                <mdui-button-icon v-if="weightRows.length > 1" icon="remove_circle--outlined"
+                                    @click="removeWeightRow(rIdx)"></mdui-button-icon>
+                            </div>
+                        </div>
+                        <mdui-button variant="tonal" icon="add--outlined" @click="addWeightRow">{{
+                            $t('commands.weightAdd')
+                        }}
+                        </mdui-button>
+                    </div>
+                    <mdui-card v-if="selectedCmd.notes" variant="filled" class="notes_card">
+                        <mdui-icon name="info--outlined"></mdui-icon>
+                        <span>{{ selectedCmd.notes }}</span>
+                    </mdui-card>
+                    <div v-if="currentCmdStr" class="preview_area">
+                        <div class="preview_label">
+                            <mdui-icon name="visibility--outlined"></mdui-icon>
+                            <span>{{ $t('commands.preview') }}</span>
+                            <mdui-button-icon icon="content_copy--outlined"
+                                @click="copySingle(currentCmdStr)"></mdui-button-icon>
+                        </div>
+                        <div class="preview_text">{{ currentCmdStr }}</div>
+                        <div class="preview_chars"
+                            :class="{ ok: currentCharCount <= 70, warn: currentCharCount > 55 && currentCharCount <= 70, err: currentCharCount > 70 }">
+                            {{ $t('commands.chars') }}{{ currentCharCount }} / 70
+                            <span v-if="currentCharCount > 70">⚠️ {{ $t('commands.overlimit') }}</span>
                         </div>
                     </div>
-                    <mdui-button variant="tonal" icon="add--outlined" @click="addWeightRow">{{ $t('commands.weightAdd')
-                    }}
-                    </mdui-button>
                 </div>
-                <mdui-card v-if="selectedCmd.notes" variant="filled" class="notes_card">
-                    <mdui-icon name="info--outlined"></mdui-icon>
-                    <span>{{ selectedCmd.notes }}</span>
-                </mdui-card>
-                <div v-if="currentCmdStr" class="preview_area">
-                    <div class="preview_label">
-                        <mdui-icon name="visibility--outlined"></mdui-icon>
-                        <span>{{ $t('commands.preview') }}</span>
-                        <mdui-button-icon icon="content_copy--outlined"
-                            @click="copySingle(currentCmdStr)"></mdui-button-icon>
-                    </div>
-                    <div class="preview_text">{{ currentCmdStr }}</div>
-                    <div class="preview_chars"
-                        :class="{ ok: currentCharCount <= 70, warn: currentCharCount > 55 && currentCharCount <= 70, err: currentCharCount > 70 }">
-                        {{ $t('commands.chars') }}{{ currentCharCount }} / 70
-                        <span v-if="currentCharCount > 70">⚠️ {{ $t('commands.overlimit') }}</span>
-                    </div>
+                <div v-else class="empty_state">
+                    <mdui-icon name="touch_app--outlined"></mdui-icon>
+                    <p>{{ $t('commands.emptyHint') }}</p>
                 </div>
-            </div>
-            <div v-else class="empty_state">
-                <mdui-icon name="touch_app--outlined"></mdui-icon>
-                <p>{{ $t('commands.emptyHint') }}</p>
-            </div>
-        </mdui-card>
-        <mdui-card class="panel catalog_card">
-            <div class="panel_title">
-                <mdui-icon name="list_alt--outlined"></mdui-icon>
-                <span>{{ $t('commands.catalog') }}</span>
-            </div>
-            <mdui-collapse :value="expandedGroups" @change="expandedGroups = $event.target.value">
-                <mdui-collapse-item v-for="(group, gIdx) in commandGroups" :key="group.label" :value="'g' + gIdx">
-                    <mdui-list-item :icon="group.icon" slot="header">
-                        {{ group.label }}
-                    </mdui-list-item>
-                    <div>
-                        <mdui-list-item v-for="cmd in group.commands" :key="cmd.name" rounded
-                            :active="selectedCmd && selectedCmd.name === cmd.name" @click="selectCmd(cmd)">
-                            {{ cmd.cnName || cmd.name }}</mdui-list-item>
-                    </div>
-                </mdui-collapse-item>
-            </mdui-collapse>
-        </mdui-card>
-        <mdui-card class="panel output_card">
-            <div class="panel_title">
-                <mdui-icon name="list--outlined"></mdui-icon>
-                <span>{{ $t('commands.list') }}</span>
-                <mdui-button v-if="instructionList.length > 0" variant="text" icon="delete_sweep--outlined"
-                    @click="clearList">{{ $t('commands.clear') }}</mdui-button>
-            </div>
+            </mdui-card>
+            <mdui-card class="panel catalog_card">
+                <div class="panel_title">
+                    <mdui-icon name="list_alt--outlined"></mdui-icon>
+                    <span>{{ $t('commands.catalog') }}</span>
+                </div>
+                <mdui-collapse :value="expandedGroups" @change="expandedGroups = $event.target.value">
+                    <mdui-collapse-item v-for="(group, gIdx) in commandGroups" :key="group.label" :value="'g' + gIdx">
+                        <mdui-list-item :icon="group.icon" slot="header">
+                            {{ group.label }}
+                        </mdui-list-item>
+                        <div>
+                            <mdui-list-item v-for="cmd in group.commands" :key="cmd.name" rounded
+                                :active="selectedCmd && selectedCmd.name === cmd.name" @click="selectCmd(cmd)">
+                                {{ cmd.cnName || cmd.name }}</mdui-list-item>
+                        </div>
+                    </mdui-collapse-item>
+                </mdui-collapse>
+            </mdui-card>
+            <mdui-card class="panel output_card">
+                <div class="panel_title">
+                    <mdui-icon name="list--outlined"></mdui-icon>
+                    <span>{{ $t('commands.list') }}</span>
+                    <mdui-button v-if="instructionList.length > 0" variant="text" icon="delete_sweep--outlined"
+                        @click="clearList">{{ $t('commands.clear') }}</mdui-button>
+                </div>
 
-            <div v-if="instructionList.length > 0" class="instruction_list">
-                <mdui-card v-for="(item, idx) in instructionList" :key="idx" variant="filled" class="instruction_item">
-                    <span class="item_text">{{ item.text }}</span>
-                    <div class="item_right">
-                        <span class="item_chars" :class="item.chars <= 70 ? 'ok' : 'err'">{{ item.chars }}</span>
-                        <mdui-button-icon icon="content_copy--outlined"
-                            @click="copySingle(item.text)"></mdui-button-icon>
-                    </div>
-                </mdui-card>
-            </div>
-            <div v-else class="empty_state">
-                <mdui-icon name="inbox--outlined"></mdui-icon>
-                <p>{{ $t('commands.empty') }}</p>
-            </div>
+                <div v-if="instructionList.length > 0" class="instruction_list">
+                    <mdui-card v-for="(item, idx) in instructionList" :key="idx" variant="filled"
+                        class="instruction_item">
+                        <span class="item_text">{{ item.text }}</span>
+                        <div class="item_right">
+                            <span class="item_chars" :class="item.chars <= 70 ? 'ok' : 'err'">{{ item.chars }}</span>
+                            <mdui-button-icon icon="content_copy--outlined"
+                                @click="copySingle(item.text)"></mdui-button-icon>
+                        </div>
+                    </mdui-card>
+                </div>
+                <div v-else class="empty_state">
+                    <mdui-icon name="inbox--outlined"></mdui-icon>
+                    <p>{{ $t('commands.empty') }}</p>
+                </div>
 
-            <mdui-button full-width variant="filled" icon="add_circle--outlined" :disabled="!canAdd"
-                @click="addToList">{{
-                    $t('commands.add') }}</mdui-button>
-            <div v-if="!canAdd && currentCmdStr" class="cannot_add">{{ $t('commands.cannotAdd') }}</div>
-        </mdui-card>
+                <mdui-button full-width variant="filled" icon="add_circle--outlined" :disabled="!canAdd"
+                    @click="addToList">{{
+                        $t('commands.add') }}</mdui-button>
+                <div v-if="!canAdd && currentCmdStr" class="cannot_add">{{ $t('commands.cannotAdd') }}</div>
+            </mdui-card>
+        </div>
     </div>
 </template>
 
 <style scoped>
+@media screen and (max-width: 1300px) {
+    .panel_main {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+.panel_main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
 .panel {
     padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 12px;
-    margin-bottom: 8px;
-}
-
-.catalog_card {
-    margin-bottom: 8px;
 }
 
 .panel_title {
