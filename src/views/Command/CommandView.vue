@@ -38,6 +38,7 @@ export default {
                         { name: '/startp', cnName: '开始倒计时（不填充机器人）', fields: [], notes: '开始倒计时，不填充机器人' },
                         { name: '/flight', cnName: '重新生成巨鹰路径', fields: [], notes: '重新生成巨鹰飞行路径' },
                         { name: '/gasspeed', cnName: '调整毒气速度', fields: [{ key: 'speed', label: '速度倍率 (0.4 ~ 3.0)', type: 'number', min: 0.4, max: 3.0, step: 0.1, required: true }] },
+                        { name: '/noboss', cnName: '开关boss生成', fields: [], notes: '第一次输入为关再次输入为撤回 | SvR模式特供，本场比赛不会刷新boss' },
                         { name: '/emus', cnName: '开关鸸鹋生成', fields: [], notes: '第一次输入为关再次输入为撤回' },
                         { name: '/utils', cnName: '开关超级神器生成', fields: [], notes: '第一次输入为关再次输入为撤回' },
                         { name: '/guns', cnName: '开关枪支生成', fields: [], notes: '第一次输入为关再次输入为撤回' },
@@ -46,6 +47,7 @@ export default {
                         { name: '/moles', cnName: '开关鼹鼠宝箱生成', fields: [], notes: '第一次输入为关再次输入为撤回' },
                         { name: '/hamballs', cnName: '开关仓鼠球生成', fields: [], notes: '第一次输入为关再次输入为撤回' },
                         { name: '/altars', cnName: '开关香蕉祭坛', fields: [], notes: '第一次输入为关再次输入为撤回' },
+                        { name: '/tanks', cnName: '开关重生仓', fields: [], notes: '第一次输入为关再次输入为撤回 | 该指令会使本场比赛无法使用重生仓，死亡后也不会掉落DNA' },
                         { name: '/soccer', cnName: '生成足球', fields: [], notes: '生成一个足球（同时只能存在一个）' },
                         { name: '/saw', cnName: '移至SAW阵营', fields: [{ key: 'playerId', label: '玩家编号', type: 'text', required: true }], notes: '将指定玩家移动到SAW阵营' },
                         { name: '/rebel', cnName: '移至反抗军阵营', fields: [{ key: 'playerId', label: '玩家编号', type: 'text', required: true }], notes: '将指定玩家移动到反抗军阵营' },
@@ -61,7 +63,9 @@ export default {
                     label: '全局可用',
                     icon: 'sports_esports--outlined',
                     commands: [
+                        { name: '/killfeed', cnName: '隐藏击杀播报', fields: [], notes: '第一次输入为关再次输入为撤回 | 此指令是对全体玩家生效，即使是ghost也无法看见击杀播报' },
                         { name: '/hidenames', cnName: '开关匿名模式', fields: [], notes: '第一次输入为关再次输入为撤回' },
+                        { name: '/allchat', cnName: '全体禁言', fields: [], notes: '第一次输入为关再次输入为撤回 | 此指令是对全体玩家生效，主持人依然可以正常发言' },
                         { name: '/yell', cnName: '全体喊话', fields: [{ key: 'msg', label: '消息内容', type: 'text', required: true, placeholder: '输入你想说的话' }] },
                         { name: '/highping', cnName: '设置高延迟阈值', fields: [{ key: 'threshold', label: '阈值', type: 'number', min: 0, required: true }] },
                         { name: '/matchid', cnName: '显示战局代码', fields: [], notes: '显示并复制当前战局代码/密码' },
@@ -95,6 +99,7 @@ export default {
                     icon: 'auto_fix_high--outlined',
                     commands: [
                         { name: '/score', cnName: '复制记分板', fields: [], notes: '复制记分板到剪贴板' },
+                        { name: '/storm', cnName: '强制暴风雨', fields: [], notes: '强制触发暴风雨' },
                         { name: '/rain', cnName: '强制降雨', fields: [], notes: '强制触发降雨（一局仅一次）' },
                         { name: '/rainoff', cnName: '停止降雨', fields: [], notes: '强制结束降雨' },
                         { name: '/kill', cnName: '击杀玩家', fields: [{ key: 'playerId', label: '玩家编号或者all', type: 'text', required: true }], notes: '杀死指定玩家或机器人（需跳伞后生效）' },
@@ -117,7 +122,13 @@ export default {
                         {
                             name: '/util', cnName: '生成超级神器', fields: [
                                 { key: 'utilId', label: '编号 (0-6)', type: 'number', min: 0, max: 6, required: true }
-                            ], build: (v) => '/util' + v.utilId
+                            ], build: (v) => '/util' + v.utilId, notes: '编号参考: 0-爪爪战靴 1-香蕉叉叉 2-忍者神靴 3-臭鼬毒气呼吸器 4-金色生命果汁杯 5-超级弹挂 6-SAW玄学胶带'
+                        },
+                        {
+                            name: '/ammo', cnName: '生成子弹', fields: [
+                                { key: 'type', label: '子弹类型编号', type: 'number', required: true },
+                                { key: 'count', label: '数量', type: 'number', min: 1, required: true }
+                            ], build: (v) => { let s = '/ammo' + v.type; if (v.count !== undefined && v.count !== '') s += ' ' + v.count; return s; }, notes: '编号参考:0-小型子弹 1-霰弹 2-大型子弹 3-狙击子弹 4-特殊子弹 5-紫晶弹药'
                         },
                         {
                             name: '/ammo', cnName: '生成子弹', fields: [
@@ -350,7 +361,7 @@ export default {
                 <div class="panel_title">
                     <mdui-icon name="build--outlined"></mdui-icon>
                     <span>{{ selectedCmd ? (selectedCmd.cnName || selectedCmd.name) : $t('commands.selectHint')
-                        }}</span>
+                    }}</span>
                 </div>
                 <div class="presets">
                     <span class="presets_label">{{ $t('commands.presets') }}</span>
@@ -377,7 +388,7 @@ export default {
                         @change="onTeleportSpotChange($event.target.value)">
                         <mdui-menu-item value="">{{ $t('commands.teleportPlaceholder') }}</mdui-menu-item>
                         <mdui-menu-item v-for="spot in teleportSpots" :key="spot.name" :value="spot.name">{{ spot.name
-                            }}
+                        }}
                         </mdui-menu-item>
                     </mdui-select>
                     <div v-if="isWeightCmd" class="weight_block">
@@ -399,7 +410,7 @@ export default {
                         </div>
                         <mdui-button variant="tonal" icon="add--outlined" @click="addWeightRow">{{
                             $t('commands.weightAdd')
-                            }}
+                        }}
                         </mdui-button>
                     </div>
                     <mdui-card v-if="selectedCmd.notes" variant="filled" class="notes_card">
