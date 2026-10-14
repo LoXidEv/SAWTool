@@ -41,6 +41,7 @@ export default {
                         { name: '/noboss', cnName: '开关boss生成', fields: [], notes: '第一次输入为关再次输入为撤回 | SvR模式特供，本场比赛不会刷新boss' },
                         { name: '/emus', cnName: '开关鸸鹋生成', fields: [], notes: '第一次输入为关再次输入为撤回' },
                         { name: '/utils', cnName: '开关超级神器生成', fields: [], notes: '第一次输入为关再次输入为撤回' },
+                        { name: '/allitems', cnName: '开关所有物品生成', fields: [], notes: '第一次输入为关再次输入为撤回 | 该指令会禁用全部物品生成' },
                         { name: '/guns', cnName: '开关枪支生成', fields: [], notes: '第一次输入为关再次输入为撤回' },
                         { name: '/throwables', cnName: '开关投掷物生成', fields: [], notes: '第一次输入为关再次输入为撤回' },
                         { name: '/armors', cnName: '开关护甲生成', fields: [], notes: '第一次输入为关再次输入为撤回' },
@@ -60,7 +61,7 @@ export default {
                     ]
                 },
                 {
-                    label: '全局可用',
+                    label: '全局',
                     icon: 'sports_esports--outlined',
                     commands: [
                         { name: '/killfeed', cnName: '隐藏击杀播报', fields: [], notes: '第一次输入为关再次输入为撤回 | 此指令是对全体玩家生效，即使是ghost也无法看见击杀播报' },
@@ -78,7 +79,7 @@ export default {
                                 { key: 'target', label: '目标 (ID 或 all)', type: 'text', required: true, placeholder: '例: 3 或 all' },
                                 { key: 'x', label: 'X 坐标 (0-4600)', type: 'number', min: 0, max: 4600, required: true },
                                 { key: 'y', label: 'Y 坐标 (0-4600)', type: 'number', min: 0, max: 4600, required: true }
-                            ], notes: '定点传送默认目标ALL，自定义传送需要自行修改XY和目标'
+                            ], notes: '定点传送默认目标ALL，自定义传送需要自行修改XY和目标(如果不填任何数据就会弹出一张地图点击任意地点直接传送)'
                         },
                         { name: '/getpos', cnName: '获取当前位置', fields: [], notes: '获取当前位置坐标' },
                         { name: '/ghost', cnName: '进入观战幽灵模式', fields: [{ key: 'playerId', label: '玩家ID（可选，留空为自己）注意使用后不能撤回', type: 'text', placeholder: '可选' }], build: (v) => '/ghost' + (v.playerId ? ' ' + v.playerId : '') },
@@ -103,7 +104,7 @@ export default {
                         { name: '/rain', cnName: '强制降雨', fields: [], notes: '强制触发降雨（一局仅一次）' },
                         { name: '/rainoff', cnName: '停止降雨', fields: [], notes: '强制结束降雨' },
                         { name: '/kill', cnName: '击杀玩家', fields: [{ key: 'playerId', label: '玩家编号或者all', type: 'text', required: true }], notes: '杀死指定玩家或机器人（需跳伞后生效）' },
-                        { name: '/infect', cnName: '感染玩家（行鸡走肉）', fields: [{ key: 'playerId', label: '玩家编号', type: 'text', required: true }], notes: '行鸡走肉模式下感染该玩家' },
+                        { name: '/infect', cnName: '感染玩家（动物大逃杀/旧版行鸡走肉）', fields: [{ key: 'playerId', label: '玩家编号', type: 'text', required: true }], notes: '在动物大逃杀/旧版行鸡走肉模式下感染该玩家为僵尸Joe' },
                         { name: '/banana', cnName: '生成香蕉', fields: [{ key: 'count', label: '数量', type: 'number', min: 1, max: 99, required: true }] },
                         { name: '/nade', cnName: '生成手榴弹', fields: [{ key: 'count', label: '数量', type: 'number', min: 1, max: 99, required: true }] },
                         { name: '/zip', cnName: '生成滑索', fields: [{ key: 'count', label: '数量', type: 'number', min: 1, max: 99, required: true }] },
@@ -114,7 +115,7 @@ export default {
                         { name: '/giant', cnName: '生成巨大树懒', fields: [], notes: '生成一个巨大树懒，若场上已经有巨大树懒则为清除' },
                         { name: '/boss', cnName: '生成超级星鼻鼹', fields: [], notes: '生成超级星鼻鼹' },
                         {
-                            name: '/gun', cnName: '生成指定武器', notes: '武器编号 (0-24) 0-手枪 1-双持 2-左轮 3-沙鹰 4-消音 5-霰弹 6-虎喷 7-冲锋枪 8-托马斯 9-AK 10-M16 11-飞镖枪 12-大飞镖枪 13-猎枪 14-狙击枪 15-能量枪 16-X激光炮 17-机枪 18-弓 19-弩 20-BCG 21-三管 22-尸弩 23-《孙宇智》24-《两个孙宇智》', fields: [
+                            name: '/gun', cnName: '生成指定武器', notes: '武器编号 (0-24) 0-手枪 1-双持 2-左轮 3-沙鹰 4-消音 5-霰弹 6-虎喷 7-冲锋枪 8-托马斯 9-AK 10-M16 11-飞镖枪 12-大飞镖枪 13-猎枪 14-狙击枪 15-能量枪 16-X激光炮 17-机枪 18-弓 19-弩 20-BCG 21-三管 22-尸弩 23-UZi 24-双持UZI', fields: [
                                 { key: 'gunId', label: '武器编号', type: 'number', min: 0, max: 19, required: true },
                                 { key: 'rarity', label: '稀有度 (0普通 / 1罕见 / 2稀有/ 3史诗/4传说，可选)', type: 'number', min: 0, max: 2, placeholder: '可选' }
                             ], build: (v) => { let s = '/gun' + v.gunId; if (v.rarity !== undefined && v.rarity !== '') s += ' ' + v.rarity; return s; }
@@ -129,12 +130,6 @@ export default {
                                 { key: 'type', label: '子弹类型编号', type: 'number', required: true },
                                 { key: 'count', label: '数量', type: 'number', min: 1, required: true }
                             ], build: (v) => { let s = '/ammo' + v.type; if (v.count !== undefined && v.count !== '') s += ' ' + v.count; return s; }, notes: '编号参考:0-小型子弹 1-霰弹 2-大型子弹 3-狙击子弹 4-特殊子弹 5-紫晶弹药'
-                        },
-                        {
-                            name: '/ammo', cnName: '生成子弹', fields: [
-                                { key: 'type', label: '子弹类型编号', type: 'number', required: true },
-                                { key: 'count', label: '数量', type: 'number', min: 1, required: true }
-                            ], build: (v) => '/ammo' + v.type + ' ' + v.count
                         },
                         {
                             name: '/armor', cnName: '生成护甲', fields: [
@@ -183,8 +178,9 @@ export default {
                 { label: '弓与箭', value: 'gunbow' },
                 { label: '十字弩', value: 'guncrossbow' },
                 { label: '大鳱枪', value: 'gunegglauncher' },
-                { label: '《孙宇智》', value: 'gunuzi' },
-                { label: '《两个孙宇智》', value: 'gundualuzi' },
+                { label: 'UZI', value: 'gunuzi' },
+                { label: '双持UZI', value: 'gundualuzi' },
+                { label: 'X光狙击枪', value: 'gunlasersniper' },
                 { label: '小牛犬步枪', value: 'gunburst' },
                 { label: '三筒雷管', value: 'gunblunderbuss' },
                 { label: '尸弩', value: 'guncrossbowzombie' },
