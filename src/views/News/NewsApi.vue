@@ -155,8 +155,8 @@ export default {
                     <mdui-menu-item value="text">{{ $t('news.api.formatText') }}</mdui-menu-item>
                 </mdui-select>
                 <div class="api_switch">
-                    <mdui-switch :checked="config.full" @change="config.full = $event.target.checked">{{
-                        $t('news.api.paramFull') }}</mdui-switch>
+                    <mdui-switch :checked="config.full" @change="config.full = $event.target.checked"></mdui-switch>
+                    <span class="switch_label" @click="config.full = !config.full">{{ $t('news.api.paramFull') }}</span>
                 </div>
             </div>
         </mdui-card>
@@ -234,6 +234,7 @@ export default {
 .api_switch {
     display: flex;
     align-items: center;
+    gap: 8px;
 }
 
 .api_note {
@@ -309,6 +310,19 @@ export default {
     white-space: pre-wrap;
     word-break: break-all;
     color: var(--text-color);
+}
+
+.switch_field {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.switch_label {
+    font-size: 14px;
+    color: var(--text-color);
+    cursor: pointer;
+    user-select: none;
 }
 
 @media (max-width: 900px) {

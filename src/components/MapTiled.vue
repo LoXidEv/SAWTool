@@ -572,8 +572,11 @@ export default {
 
                 <div class="devtools-body">
                     <mdui-card variant="outlined" class="tool-section">
-                        <mdui-switch :checked="collectMode" @change="collectMode = $event.target.checked">坐标采集模式
-                        </mdui-switch>
+                        <div class="switch_field">
+                            <mdui-switch :checked="collectMode"
+                                @change="collectMode = $event.target.checked"></mdui-switch>
+                            <span class="switch_label" @click="collectMode = !collectMode">坐标采集模式</span>
+                        </div>
                     </mdui-card>
 
                     <mdui-card variant="outlined" class="tool-section">
@@ -1040,6 +1043,19 @@ export default {
     font-family: 'Consolas', 'Menlo', monospace;
     white-space: pre-wrap;
     word-break: break-all;
+}
+
+.switch_field {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.switch_label {
+    font-size: 14px;
+    color: var(--text-color);
+    cursor: pointer;
+    user-select: none;
 }
 
 @media screen and (max-width: 680px) {

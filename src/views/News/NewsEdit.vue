@@ -383,10 +383,12 @@ export default {
             </div>
 
             <div class="github_options">
-                <mdui-switch :checked="github.usePr" @change="github.usePr = $event.target.checked">{{
-                    $t('news.edit.usePr') }}</mdui-switch>
+                <div class="switch_field">
+                    <mdui-switch :checked="github.usePr" @change="github.usePr = $event.target.checked"></mdui-switch>
+                    <span class="switch_label" @click="github.usePr = !github.usePr">{{ $t('news.edit.usePr') }}</span>
+                </div>
                 <mdui-button variant="text" icon="clear--outlined" @click="clearToken">{{ $t('news.edit.clearToken')
-                }}</mdui-button>
+                    }}</mdui-button>
             </div>
 
             <div class="github_actions">
@@ -573,6 +575,19 @@ export default {
     white-space: pre-wrap;
     word-break: break-all;
     color: var(--text-color-oc);
+}
+
+.switch_field {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.switch_label {
+    font-size: 14px;
+    color: var(--text-color);
+    cursor: pointer;
+    user-select: none;
 }
 
 @media (max-width: 900px) {
