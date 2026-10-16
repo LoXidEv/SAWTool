@@ -42,3 +42,119 @@
     font-size: 14px;
   }
 }
+
+/* 资讯 Markdown 正文样式（供 v-html 渲染使用） */
+.markdown_body {
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--text-color);
+  word-break: break-word;
+}
+
+.markdown_body h1,
+.markdown_body h2,
+.markdown_body h3,
+.markdown_body h4 {
+  font-family: 'Poppins SemiBold';
+  line-height: 1.3;
+  margin: 24px 0 12px;
+}
+
+.markdown_body h1 {
+  font-size: 26px;
+}
+
+.markdown_body h2 {
+  font-size: 22px;
+}
+
+.markdown_body h3 {
+  font-size: 18px;
+}
+
+.markdown_body p {
+  margin: 12px 0;
+}
+
+.markdown_body a {
+  color: var(--theme-color-2);
+  text-decoration: none;
+}
+
+.markdown_body a:hover {
+  text-decoration: underline;
+}
+
+.markdown_body ul,
+.markdown_body ol {
+  padding-left: 24px;
+  margin: 12px 0;
+}
+
+.markdown_body li {
+  margin: 4px 0;
+}
+
+.markdown_body blockquote {
+  margin: 12px 0;
+  padding: 8px 16px;
+  border-left: 4px solid var(--theme-color-2);
+  background: var(--theme-color-2-oc-up);
+  border-radius: 0 var(--card-border-radius) var(--card-border-radius) 0;
+  color: var(--text-color-oc);
+}
+
+.markdown_body code {
+  font-family: 'Consolas', 'Menlo', monospace;
+  font-size: 0.9em;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: var(--text-color-oc-up);
+}
+
+.markdown_body pre {
+  margin: 12px 0;
+  padding: 14px;
+  border-radius: var(--card-border-radius);
+  overflow-x: auto;
+  background: rgba(0, 0, 0, 0.04);
+  border: 1px solid var(--border-color);
+}
+
+.markdown_body pre code {
+  padding: 0;
+  background: none;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.markdown_body img {
+  max-width: 100%;
+  border-radius: var(--card-border-radius);
+}
+
+.markdown_body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0;
+  font-size: 14px;
+}
+
+.markdown_body th,
+.markdown_body td {
+  border: 1px solid var(--border-color);
+  padding: 8px 10px;
+  text-align: left;
+}
+
+.markdown_body th {
+  background: var(--text-color-oc-up);
+  font-family: 'Poppins SemiBold';
+}
+
+.markdown_body hr {
+  border: none;
+  height: 1px;
+  background: var(--border-color);
+  margin: 20px 0;
+}

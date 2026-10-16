@@ -10,6 +10,10 @@ import SkinsAuthor from '../views/Skins/SkinsAuthor.vue'
 import SkinsEdit from '../views/Skins/SkinsEdit.vue'
 import CouponCodesList from '../views/CouponCodes/CouponCodesList.vue'
 import CommandView from '../views/Command/CommandView.vue'
+import NewsView from '../views/News/NewsView.vue'
+import NewsDetail from '../views/News/NewsDetail.vue'
+import NewsEdit from '../views/News/NewsEdit.vue'
+import NewsApi from '../views/News/NewsApi.vue'
 
 import WebInfo from '@/WebInfo/config.json'
 
@@ -81,6 +85,38 @@ const router = createRouter({
         title: 'Commands - ' + SITE_NAME,
       },
       component: CommandView,
+    },
+    {
+      path: '/news',
+      name: 'news',
+      meta: {
+        title: 'News - ' + SITE_NAME,
+      },
+      component: NewsView,
+    },
+    {
+      path: '/news/detail/:id',
+      name: 'newsDetail',
+      meta: {
+        title: 'News Detail - ' + SITE_NAME,
+      },
+      component: NewsDetail,
+    },
+    {
+      path: '/news/edit',
+      name: 'newsEdit',
+      meta: {
+        title: 'News Editor - ' + SITE_NAME,
+      },
+      component: NewsEdit,
+    },
+    {
+      path: '/news/api',
+      name: 'newsApi',
+      meta: {
+        title: 'News API - ' + SITE_NAME,
+      },
+      component: NewsApi,
     },
     {
       path: '/map',
